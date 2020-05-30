@@ -125,7 +125,6 @@ showSlides(slideIndex);
 
 // Next/previous controls
 function plusSlides(n) {
-  console.log(slideIndex);
   showSlides(slideIndex += n);
 }
 
