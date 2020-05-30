@@ -117,15 +117,14 @@ for (var i = 0; i < btns.length; i++) {
 }
 
 //////////////////////////////////////////////////////////////////////
-  ///////////////////////// images slideshow ////////////////////////
+///////////////////////// images slideshow ////////////////////////
 /////////////////////////////////////////////////////////////////////
 var slideIndex = 1;
-var projectName="";
+var projectName = "";
 showSlides(slideIndex);
 
 // Next/previous controls
 function plusSlides(n) {
-  console.log(slideIndex);
   showSlides(slideIndex += n);
 }
 
@@ -139,8 +138,12 @@ function showSlides(n) {
   var project = document.getElementById(projectName);
   var slides = project.getElementsByClassName("mySlides");
   var dots = project.getElementsByClassName("dot");
-  if (n > slides.length) { slideIndex = 1 }
-  if (n < 1) { slideIndex = slides.length }
+  if (n > slides.length) {
+    slideIndex = 1
+  }
+  if (n < 1) {
+    slideIndex = slides.length
+  }
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
