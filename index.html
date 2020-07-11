@@ -32,6 +32,8 @@
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
                             href="#portfolio">Portfolio</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                            href="#blog">Blog</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
                             href="#about">About</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
                             href="#contact">Contact</a></li>
@@ -44,13 +46,17 @@
         <div class="container d-flex align-items-center flex-column">
             <!-- Masthead Avatar Image--><img class="masthead-avatar mb-5" src="assets/img/smile.gif" alt="" />
             <!-- Masthead Heading-->
-            <h1 class="masthead-heading text-uppercase mb-0">Welcome to my portfolio!</h1>
+            <h1 class="masthead-heading text-uppercase mb-0">Welcome to my site!</h1>
             <!-- Icon Divider-->
             <div class="divider-custom divider-light">
                 <div class="divider-custom-line"></div>
                 <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                 <div class="divider-custom-line"></div>
             </div>
+            <p style="text-align:center">I am an aspiring Computer Science Student from Israel. Join me on my quest (or just the parts you find
+                helpful) as I share my path
+                to becoming a data scientist!
+            </p>
             <!-- Masthead Subheading-->
             <p class="masthead-subheading font-weight-light mb-0">
                 <i class="fab fa-python"></i>
@@ -71,12 +77,13 @@
                 <div class="divider-custom-icon"><i class="fas fa-briefcase"></i></i></div>
                 <div class="divider-custom-line"></div>
             </div>
+            <p style="text-align:center">Don't judge book by it's cover, but there are some of my projects. Enjoy!</p>
             <!-- Portfolio Grid Items-->
             <div class="row" id="Portfolio">
                 <!-- Portfolio Item 1-->
                 <div class="col-md-6 col-lg-4 mb-5 python">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" onclick="showSlidesProject('Project1')" data-target="#portfolioModal1">
-                        Battleships
+                    <div class="portfolio-item mx-auto" data-toggle="modal" onclick="showSlidesProject('Project1')"
+                        data-target="#portfolioModal1">
                         <div
                             class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                             <div class="portfolio-item-caption-content text-center text-white"><i
@@ -87,7 +94,8 @@
                 </div>
                 <!-- Portfolio Item 2-->
                 <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" onclick="showSlidesProject('Project2')" data-target="#portfolioModal2">
+                    <div class="portfolio-item mx-auto" data-toggle="modal" onclick="showSlidesProject('Project2')"
+                        data-target="#portfolioModal2">
                         <div
                             class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                             <div class="portfolio-item-caption-content text-center text-white"><i
@@ -107,25 +115,65 @@
                         <img class="img-fluid" src="assets/img/portfolio/Project5.PNG" alt="java" />
                     </div>
                 </div>
+                <!-- Portfolio Item 4-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-toggle="modal" onclick="showSlidesProject('Project7')"
+                        data-target="#portfolioModal7">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/Project7.PNG" alt="java" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Section-->
+    <section class="page-section bg-primary text-white mb-0 portfolio" id="blog">
+        <div class="container">
+            <!-- Portfolio Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-white">Articles</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon">
+                    <span class="iconify" data-icon="carbon:blog" data-inline="false"></span></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <div class="container blog text-center justify-content-center">
+                <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Scatter Plot</div>
+                    <div class="card-body">
+                        <a href="blog-scatterplot.html"><img class="card-img-top"
+                                src="assets/img/blog/icons/scatterplot.PNG" style="max-width: 120px"
+                                alt="Card image cap"></a>
+                        <p class="card-text">A breakdown of a useful plot to detect a relationship or correlation
+                            between
+                            the two variables exists </p>
+                        <p class="card-text"><small class="text-muted">Posted 11, July 2020</small></p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <!-- About Section-->
-    <section class="page-section bg-primary text-white mb-0" id="about">
+    <section class="page-section" id="about">
         <div class="container">
             <!-- About Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-white">About Me</h2>
+            <h2 class="page-section-heading text-center text-uppercase">About Me</h2>
             <!-- Icon Divider-->
-            <div class="divider-custom divider-light">
+            <div class="divider-custom divider">
                 <div class="divider-custom-line"></div>
                 <div class="divider-custom-icon"><i class="far fa-address-card"></i></i></div>
                 <div class="divider-custom-line"></div>
             </div>
             <!-- About Section Button-->
             <div class="text-center mt-4">
-                <a class="btn btn-xl btn-outline-light" href="assets/resume/MosheGotam.pdf"><i
+                <a class="btn btn-xl btn-outline-dark" href="assets/resume/MosheGotam.pdf"><i
                         class="far fa-file-pdf"></i> Resume - PDF Version</a>
-                <a class="btn btn-xl btn-outline-light" href="assets/resume/MosheGotam.docx"><i
+                <a class="btn btn-xl btn-outline-dark" href="assets/resume/MosheGotam.docx"><i
                         class="far fa-file-word"></i> Resume - DOC Version</a>
             </div>
             <!-- About Section Content-->
@@ -144,12 +192,12 @@
         </div>
     </section>
     <!-- Contact Section-->
-    <section class="page-section" id="contact">
+    <section class="page-section bg-primary text-white mb-0 contact" id="contact">
         <div class="container d-flex align-items-center flex-column">
             <!-- Contact Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+            <h2 class="page-section-heading text-center text-uppercase text-white mb-0">Contact Me</h2>
             <!-- Icon Divider-->
-            <div class="divider-custom">
+            <div class="divider-custom divider-light">
                 <div class="divider-custom-line"></div>
                 <div class="divider-custom-icon">
                     <span class="iconify" data-icon="ic:round-contact-phone" data-inline="false"></span></div>
@@ -158,18 +206,18 @@
             <!-- Contact Section Form-->
             <p class="masthead-subheading font-weight-light mb-0">Want to do a project togther? Have a question you want
                 to ask?
-                <br>Contant me!
+                <br>Contact me!
                 <br><b>Mail:</b> mgotam@gmail.com
                 <br><b>Phone:</b> 050-2191798</p>
-                <br>
+            <br>
             <div class="col-lg-4 mb-5 mb-lg-0 d-flex align-items-center flex-column">
                 <h4 class="text-uppercase mb-4">Other Places</h4>
                 <div>
-                    <a class="btn btn-outline-dark btn-social mx-1" target="_blank"
+                    <a class="btn btn-outline-light btn-social mx-1" target="_blank"
                         href="https://www.facebook.com/mgotam"><i class="fab fa-fw fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-dark btn-social mx-1" target="_blank"
+                    <a class="btn btn-outline-light btn-social mx-1" target="_blank"
                         href="https://www.linkedin.com/in/moshe-gotam/"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                    <a class="btn btn-outline-dark btn-social mx-1" target="_blank"
+                    <a class="btn btn-outline-light btn-social mx-1" target="_blank"
                         href="https://github.com/MosheG23"><i class="fab fa-github"></i></a>
                 </div>
             </div>
@@ -228,13 +276,13 @@
                                     <!-- Next and previous buttons -->
                                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                                <br>
+                                    <br>
 
-                                <!-- The dots/circles -->
-                                <div style="text-align:center">
-                                    <span class="dot" onclick="currentSlide(1)"></span>
-                                    <span class="dot" onclick="currentSlide(2)"></span>
-                                </div>
+                                    <!-- The dots/circles -->
+                                    <div style="text-align:center">
+                                        <span class="dot" onclick="currentSlide(1)"></span>
+                                        <span class="dot" onclick="currentSlide(2)"></span>
+                                    </div>
                                 </div>
                                 <a class="btn btn-dark" href="https://github.com/MosheG23/battleship" target="_blank">
                                     <i class="fab fa-github"></i> Folder</a>
@@ -295,17 +343,17 @@
                                     <!-- Next and previous buttons -->
                                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                                <br>
+                                    <br>
 
-                                <!-- The dots/circles -->
-                                <div style="text-align:center">
-                                    <span class="dot" onclick="currentSlide(1)"></span>
-                                    <span class="dot" onclick="currentSlide(2)"></span>
-                                    <span class="dot" onclick="currentSlide(3)"></span>
-                                </div>
+                                    <!-- The dots/circles -->
+                                    <div style="text-align:center">
+                                        <span class="dot" onclick="currentSlide(1)"></span>
+                                        <span class="dot" onclick="currentSlide(2)"></span>
+                                        <span class="dot" onclick="currentSlide(3)"></span>
+                                    </div>
                                 </div>
                                 <a class="btn btn-dark" href="https://github.com/MosheG23/NCAAToNBA" target="_blank">
-                                <i class="fab fa-github"></i> Folder</a>
+                                    <i class="fab fa-github"></i> Folder</a>
                                 <button class="btn btn-primary" href="#" data-dismiss="modal"><i
                                         class="fas fa-times fa-fw"></i>Close Window</button>
                             </div>
@@ -345,6 +393,73 @@
                                 <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Project5.PNG" alt="" />
                                 <a class="btn btn-dark" href="https://github.com/MosheG23/TeamManger" target="_blank">
                                     <i class="fab fa-github"></i> Folder</a>
+                                <button class="btn btn-primary" href="#" data-dismiss="modal"><i
+                                        class="fas fa-times fa-fw"></i>Close Window</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 4-->
+    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog"
+        aria-labelledby="portfolioModal7Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                </button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Elections of Israel
+                                    21/22/23</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fab fa-python"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-5">Build a machine learning model to predict user/comment credibility
+                                </p>
+                                <!-- Portfolio Modal - Image-->
+                                <!-- Slideshow container -->
+                                <div id="Project7" class="slideshow-container">
+
+                                    <!-- Full-width images with number and caption text -->
+                                    <div class="mySlides fade-slideshow">
+                                        <div class="numbertext text-black">1 / 3</div>
+                                        <img src="assets/img/portfolio/Project7.PNG" style="width:100%">
+                                        <div class="text text-black">Slide 1</div>
+                                    </div>
+
+                                    <div class="mySlides fade-slideshow">
+                                        <div class="numbertext">2 / 3</div>
+                                        <img src="assets/img/portfolio/Project72.PNG" style="width:100%">
+                                        <div class="text">Slide 1</div>
+                                    </div>
+                                    <div class="mySlides fade-slideshow">
+                                        <div class="numbertext text-black">3 / 3</div>
+                                        <img src="assets/img/portfolio/Project73.PNG" style="width:100%">
+                                        <div class="text text-black">Database</div>
+                                    </div>
+                                    <!-- Next and previous buttons -->
+                                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                    <br>
+
+                                    <!-- The dots/circles -->
+                                    <div style="text-align:center">
+                                        <span class="dot" onclick="currentSlide(1)"></span>
+                                        <span class="dot" onclick="currentSlide(2)"></span>
+                                        <span class="dot" onclick="currentSlide(3)"></span>
+                                    </div>
+                                </div>
+
                                 <button class="btn btn-primary" href="#" data-dismiss="modal"><i
                                         class="fas fa-times fa-fw"></i>Close Window</button>
                             </div>

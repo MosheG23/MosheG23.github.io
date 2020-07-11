@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>Data Visualization: Scatterplot</title>
+  <!-- Font Awesome & iconify icons-->
+  <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
+  <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+    type="text/css" />
+  <!-- Core theme CSS)-->
+  <link href="css/blog.css" rel="stylesheet" />
+  <link href="css/styles.css" rel="stylesheet" />
+  <link rel="icon" href="assets/img/me.ico" />
+</head>
+
+<body id="page-top">
+  <div>
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Blog-MG</a><button
+          class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
+          type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+          aria-expanded="false" aria-label="Toggle navigation">Menu <i class="fas fa-bars"></i></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                href="index.html#blog">Return To Home Page</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Header-->
+    <header class="title-blog">
+      <div class="container d-flex align-items-center flex-column">
+
+        <!-- Title -->
+        <h1 class="mt-4">Data Visualization: Scatterplot</h1>
+        <!-- Author -->
+        <p class="lead">
+          by
+          <a href="#">Moshe Gotam</a>
+        </p>
+
+        <!-- Date/Time -->
+        <p>Posted on July 11, 2020</p>
+
+        <hr>
+
+        <!-- Preview Image -->
+        <img class="img-fluid rounded" src="assets/img/blog/scatterplot/title.PNG" alt="">
+        <footer class="blockquote-footer">NBA's best three pointes players of each year
+        </footer>
+        <hr>
+      </div>
+    </header>
+    <!-- Page Content -->
+    <div class="container">
+
+      <div class="row">
+
+        <!-- Post Content Column -->
+        <div class="col-lg-8">
+
+          <!-- Post Content -->
+          <hr>
+          <blockquote class="blockquote">
+          <img class="img-start" src="assets/img/blog/icons/scatterplot.PNG">
+            <p class="mb-0">“A scatter plot is a type
+            of plot or mathematical diagram using Cartesian coordinates to
+            display values for
+            typically two variables for a set of data. If the points are coded (color/shape/size), one additional
+            variable can be displayed. The data are displayed as a collection of points, each having the value of one
+            variable determining the position on the horizontal axis and the value of the other variable determining
+            the
+            position on the vertical axis.”</p>
+            <footer class="blockquote-footer"><b>ScatterPlot</b> in
+              <cite title="Source Title">Wikipedia</cite>
+            </footer>
+          </blockquote>
+          <hr>
+          <h2>What?</h2>
+          <p>One of the more simple but yet still very informative for correlation between variables we have the
+            <b>Scatter
+              Plot</b>.
+            This plot uses dots to represent values for two numeric variables. Unlike heat map (another plot to check
+            correlation), in this plot we observe relationships between variables.<br>
+            Relationships between variables can be described in many ways: positive or negative, strong or weak, linear
+            or nonlinear.</p>
+
+          <img src="assets/img/blog/scatterplot/scatter1.PNG" class="blog-img">
+
+          <p>Continuing with the basketball theme, in the plot above we have two varibles:
+            <ol>
+              <li>The avarage of team
+                points a team scored in a season</li>
+              <li>Year</li>
+            </ol>
+            From the plot we can infer that we have a good correlation between the variables. There is a <b>strong,
+              positive
+              and linear</b>
+            correlation between variables - the more we progress with the
+            years, the more points team scores.</p>
+
+          <p>But we can see one more thing - there are outliners! (what we can
+            about them is a subject for a different post). This plot is useful for identifying other <b>patterns</b> in
+            data,
+            based on how closely sets of dots cluster together we can divide the them to groups, also it's possible to
+            show gaps in the values if there are any.</p>
+          <hr>
+          <h2>Avoid from</h2>
+          <h5>Overplotting</h5>
+          <p>When we have lots of dots to plot, this can run into the issue of <b>overplotting</b>. There a saying -
+            "all covet all lose" - When your dataset is large, the dots of your scatterplot will tend to overlap, making
+            the plot unreadable.</p>
+
+          <img src="assets/img/blog/scatterplot/scatter2.PNG" class="blog-img">
+
+          <p>There are a few common ways to solve this problem:
+            <dl>
+              <dt>Decreasing dot size</dt>
+              <dd>The easiest solution is reduce the dot size - the success in this is depand on the quantity of overlap
+                you have. In combination with decreasing dot size, using transparency of the dots can also allows you to
+                reveal patterns in the data.</dd>
+              <dt>Sampling</dt>
+              <dd>Sometimes less is more! try to plot some percentage of the data - choose wisely!</dd>
+              <dt>Marginal distribution</dt>
+              <dd>It's possible to add a plot, such a boxplot, a histogram or a density plot in the margins</dd>
+              <dt>Try different plot</dt>
+              <dd>Tried everything and more? Still need to find correlation between the variable and the sctter didn't
+                help?
+                don't be one trick pony - maybe heatmap or bubble chart might do the job</dd>
+            </dl>
+          </p>
+
+          <h5>The Hidden Variable</h5>
+          <p>Another subject to stay away from is jumping fast to conclusion. Just because we found a relationship
+            between two variables in a scatter plot, it does not mean that changes in one variable are responsible for
+            changes in the second.
+            In statistics there a commaon saying that correlation does not imply causation. It's possible that there is
+            a third variable that affect both, or, pure coincidence might cause an apparent correlation.
+          </p>
+          <hr>
+          <h2>Extra Features</h2>
+          <h5>Trend Line</h5>
+          <p>Trend Line (or Line of Best Fit) refers to a line through a scatter plot of data points that best expresses
+            the relationship between those points.
+            A straight line will result from a simple linear regression analysis of two or more independent variables. A
+            regression involving multiple related variables can produce a curved line in some cases.
+          </p>
+          <h5>Third Variable</h5>
+          <p>A common use in the scatter plot is adding a third variable. Adding this variable add information that can
+            help us infer about the relations between the variables.
+          </p>
+          <h5>Annotations</h5>
+          <p>An annotation is extra information associated with a particular point in a document or other piece of
+            information. The scatter plot is highly customizable - it's possible to add text to dot, change the color,
+            shape and etc.
+            For example let's look the plot at the title:
+          </p>
+          <img src="assets/img/blog/scatterplot/title.PNG" class="blog-img-bigger">
+          <p>The plot has two variables:
+            <ol>
+              <li>The percent of three point (success / all shots)</li>
+              <li>Total 3 point scored in a year</li>
+            </ol>
+            If we observe this two variable, we can learn that the more the dot is more towards to the right side and
+            higher he
+            is a more efficient shooter.
+            <br>By adding text near the dot we can learn if the year affect about those 2 variable, information we can't
+            learned from the scatter solely. I also added the player name and afterwars I can check the player
+            furthermore.
+          </p>
+          <hr>
+          <h2>Personal Take</h2>
+          <p>So the big question after all is why to use scatter plot?<br>
+            Scatterplots is an easy plot to use, he is one of the first plot that I used. Despite easy to use, it
+            dosen't mean that the plot won't be useful only to "beginners". The plot is highly customizable and can have
+            many often use cases. If you master this plot he can be a very powerful tool for data visualization.
+          </p>
+
+          <!-- Comments Form -->
+        </div>
+        <!-- Sidebar Widgets Column -->
+        <div id="Sidebar-Widgets" class="col-md-4 sticky">
+          <!-- Categories Widget -->
+          <div class="card my-4">
+            <h5 class="card-header">Buzzwords</h5>
+            <div class="card-body">
+              <div id="buzzwords"></div>
+            </div>
+          </div>
+
+          <!-- Side Widget -->
+          <div class="card my-4">
+            <h5 class="card-header">Also Known</h5>
+            <div class="card-body">
+              <i>Scatter Graph, Point Graph, Scatter(X-Y), Scatter Chart or Scattergram.</i>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Copyright Section-->
+    <section class="copyright py-4 text-center text-white">
+      <div class="container"><small>Copyright © Moshe Gotam 2020</small></div>
+    </section>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!--Word Cloud Chart-->
+    <script src="https://cdn.anychart.com/releases/8.7.1/js/anychart-core.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.7.1/js/anychart-tag-cloud.min.js"></script>
+    <!-- Contact form JS-->
+    <script src="js/scatterplot.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!--ENDDDDDDDD-->
+</body>
+
+</html>
