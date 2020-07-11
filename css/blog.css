@@ -1,0 +1,36 @@
+/*/////////////////////////////////////////////////////////////////////
+////////////////////////////// blog posts ////////////////////////////
+////////////////////////////////////////////////////////////////////*/
+.blog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.img-start {
+    border-radius: 50%;
+    float: right;
+}
+
+.blog-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border: 1px dotted #000000;
+}
+
+.blog-img-bigger {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 99%;
+    border: 1px dotted #000000;
+}
+
+@media (max-width: 992px) {
+    #Sidebar-Widgets {
+        visibility: hidden;
+    }
+}

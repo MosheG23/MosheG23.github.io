@@ -10098,6 +10098,10 @@ h3 {
 .masthead .masthead-avatar {
   width: 15rem;
 }
+.title-blog {
+  padding-top: calc(6rem + 74px);
+  padding-bottom: 6rem;
+}
 
 @media (min-width: 992px) {
   .masthead {
