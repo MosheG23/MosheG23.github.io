@@ -43,3 +43,18 @@ anychart.onDocumentReady(function () {
     chart.container("buzzwords");
     chart.draw();
 });
+
+function readingTime(text) {
+    const wordsPerMinute = 256;
+    const noOfWords = text.split(/\s/g).length;
+    const minutes = noOfWords / wordsPerMinute;
+    const readTime = Math.ceil(minutes);
+    document.getElementById("readingTime").innerText = `${readTime} minute read`;
+}
+
+var node = document.getElementById('article');
+
+readingTime(node.innerText);
+
+
+
