@@ -29,6 +29,11 @@
     border: 1px dotted #000000;
 }
 
+.sidebar-widgets {
+    position: sticky;
+    top: 75px;
+}
+
 @media (max-width: 992px) {
     #Sidebar-Widgets {
         visibility: hidden;
