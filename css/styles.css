@@ -10096,7 +10096,7 @@ h3 {
 .masthead .masthead-subheading {
   font-size: 1.25rem;
 }
-.masthead .masthead-avatar {
+.masthead-avatar {
   border-radius: 50%;
   max-height: 120px;
   max-width: 120px;
