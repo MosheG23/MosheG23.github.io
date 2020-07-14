@@ -160,7 +160,7 @@ sup {
 }
 
 a {
-  color: #0008a8;
+  color: #ffffff;
   text-decoration: none;
   background-color: transparent;
 }
@@ -10096,7 +10096,7 @@ h3 {
 .masthead .masthead-subheading {
   font-size: 1.25rem;
 }
-.masthead .masthead-avatar {
+.masthead-avatar {
   border-radius: 50%;
   max-height: 120px;
   max-width: 120px;
@@ -10405,7 +10405,7 @@ form .row:first-child .floating-label-form-group {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  border: 1px solid #ffffff;
+  border: 1px dotted #ffffff;
   /* border-radius: 10%; */
 }
 
