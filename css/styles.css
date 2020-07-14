@@ -10433,3 +10433,17 @@ form .row:first-child .floating-label-form-group {
   position: relative;
   /* background-position: center; */
 }
+
+/*/////////////////////////////////////////////////////////////////////
+///////////////////////////// contact-cover ///////////////////////////
+////////////////////////////////////////////////////////////////////*/
+
+.contactHead {
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+url("../assets/img/contact_cover.jpg");
+height: 100%;
+width: 100%;
+background-size: cover;
+position: relative;
+/* background-position: center; */
+}
