@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
         type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
     <!-- Core theme CSS)-->
     <link href="css/styles.css" rel="stylesheet" />
     <link rel="icon" href="assets/img/me.ico" />
@@ -58,10 +59,10 @@
                     </div>
                     <h1>Hi! I'm Moshe Gotam</h1>
                     <hr>
-                    <p>An aspiring Computer Science Student from Israel. Join me on my quest (or
+                    <p>An aspiring Computer Science Student from Israel. Join in on my quest (or
                         just the parts you find
                         helpful) as I share my path
-                        to industry!</p>
+                        to industry!<br>This site was build to share my projects and knowledge, hope you enjoy!</p>
                     <!-- Masthead Subheading-->
                     <p class="masthead-subheading font-weight-light mb-0">
                         <i class="fab fa-python"></i>
@@ -163,7 +164,7 @@
         </div>
     </section>
     <!-- Blog Section-->
-    <section class="page-section bg-primary text-white mb-0 portfolio" id="blog">
+    <section class="page-section bg-primary text-white mb-0 blogHead" id="blog">
         <div class="container">
             <!-- Portfolio Section Heading-->
             <h2 class="page-section-heading text-center text-uppercase text-white">Blog</h2>
@@ -176,7 +177,7 @@
             </div>
             <ul class="flex-container">
                 <li class="flex-item">
-                    <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                    <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
                         <div class="card-header">Scatter Plot</div>
                         <div class="card-body">
                             <a href="blog-scatterplot.html"><img class="card-img-top"
@@ -200,21 +201,29 @@
             <!-- Icon Divider-->
             <div class="divider-custom divider">
                 <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><img class="masthead-avatar mb-5" src="assets/img/smile.gif" alt="" /></div>
+                <div class="divider-custom-icon"><img class="masthead-avatar" src="assets/img/me.jpg" alt="" />
+                </div>
                 <div class="divider-custom-line"></div>
             </div>
             <!-- About Section Content-->
-            <div class="row">
-                <div class="col-lg-4 ml-auto">
-                    <p class="lead">Favorite Quote: "I can accept failure, everyone fails at something. But I can't
-                        accept not trying. -Michael Jordan"<br>
-                    </p>
-                </div>
-                <div class="col-lg-4 mr-auto">
-                    <p class="lead">
-                        Favorite Team: Maccabi Tel-Aviv (Basketball)<br>
-                        Favorite Computer Game: Football Manager</p>
-                </div>
+
+            <div class="about-me-section">
+                <p style="text-align:center">I am CS student with big interest in data, programming and between. Very
+                    curious in all fields where data has big impact. <br>Entering to my last year in the
+                    degree, I
+                    took courses in Data Mining and AI and currently working with a team in a Machine Learning
+                    subject.<br>
+                    Furthermore i'm taking online courses to expand my knowledge.<br></p>
+                <p style="text-align:center">In this blog I will be covering Machine Learning concepts, programming
+                    using python, data pipeline and data engineering. I hope you find the blog useful to you as it
+                    useful to me.</p>
+                <p style="text-align:center">When i'm not learning/working, in my free time I mainly like to watch
+                    various sports (i'm a huge sports fan), as a data passionate, with a simple pie plot, be easy to
+                    show how much the
+                    time split between each sport type:</p>
+                <img class="img-sport" src="assets/img/about_me_sport.jpg" />
+                <p style="text-align:center">As you can see I mostly watch basketball - whatever is Euroleague, NBA or
+                    even the italian second league, if it's a good game I will want to watch it!</p>
             </div>
         </div>
     </section>
@@ -233,26 +242,27 @@
             <!-- Contact Section Form-->
             <p class="masthead-subheading mb-0 text-center">Want to do a project togther? Have a question you want
                 to ask?
-                <br>Contact me!
-                <br><b>Mail:</b> <a href="mailto:someone@example.com">mgotam@gmail.com</a></p>
-            <br>
-            <div class="col-lg-4 mb-5 mb-lg-0 d-flex align-items-center flex-column">
-                <h4 class="text-uppercase mb-4">Other Places</h4>
-                <div>
-                    <a class="btn btn-outline-light btn-social mx-1" target="_blank"
-                        href="https://www.facebook.com/mgotam"><i class="fab fa-fw fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" target="_blank"
-                        href="https://www.linkedin.com/in/moshe-gotam/"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" target="_blank"
-                        href="https://github.com/MosheG23"><i class="fab fa-github"></i></a>
+                <br><br>
+                <div class="col-lg-4 mb-5 mb-lg-0 d-flex align-items-center flex-column">
+                    <h4 class="text-uppercase mb-4">I'm also on:</h4>
+                    <div>
+                        <a class="btn btn-outline-light btn-social mx-1" target="_blank"
+                            href="mailto:mgotam@gmail.com"><i class="fas fa-mail-bulk"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" target="_blank"
+                            href="https://www.facebook.com/mgotam"><i class="fab fa-fw fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" target="_blank"
+                            href="https://www.linkedin.com/in/moshe-gotam/"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" target="_blank"
+                            href="https://github.com/MosheG23"><i class="fab fa-github"></i></a>
+                    </div>
                 </div>
-            </div>
         </div>
     </section>
     <!-- Copyright Section-->
     <section class="copyright py-4 text-center text-white">
-        <div class="container"><small>Moshe Gotam, inspierd by freelancer from StartBootStrap,
-                2000-<b>Present</b></small></div>
+        <div class="container"><small>inspierd by <a href="https://startbootstrap.com/themes/freelancer/"
+                    target="_blank">freelancer from StartBootStrap</a>
+                <br>Moshe Gotam • 2020-<b>Present</b></small></div>
     </section>
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
     <div class="scroll-to-top d-lg-none position-fixed">
