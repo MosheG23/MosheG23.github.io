@@ -41,3 +41,15 @@
         visibility: hidden;
     }
 }
+
+hr.style3 {
+    border-top: 1px dashed #8c8b8b;
+}
+
+.blog-p:first-letter {
+    float: left;
+    font-size: 45px;
+    line-height: 1;
+    font-weight: bold;
+    margin-right: 9px;
+}

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Machine Learning Process</title>
+    <!-- Font Awesome & iconify icons-->
+    <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <!-- Core theme CSS)-->
+    <link href="css/blog.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="icon" href="assets/img/me.ico" />
+</head>
+
+<body id="page-top">
+    <div>
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">Blog-MG</a><button
+                    class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
+                    type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu <i
+                        class="fas fa-bars"></i></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a
+                                class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.html">Return To
+                                Home Page</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Header-->
+        <header class="masthead text-center">
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Masthead Heading-->
+                <h1 class="masthead-heading text-uppercase mb-3">Machine Learning<br>Process - My 8 Steps</h1>
+                <p class="lead">
+                    <i>by Moshe Gotam</i>
+                </p>
+                <div class="divider-custom divider-dark">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><span class="iconify" data-icon="mdi:chart-scatter-plot"
+                            data-inline="false"></span></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <div class="level">
+                    <div class="level-left">
+                        <p class="has-text-info" id="readingTime">Reading Time: 0 min read</p>
+                    </div>
+                </div>
+                <!-- Date/Time -->
+                <p>Posted on July 16, 2020</p>
+                <!-- Masthead Avatar Image--><img class="img-fluid rounded"
+                    src="assets/img/blog/mlprocess/all_steps.jpg" alt="" />
+                <!-- Icon Divider-->
+            </div>
+        </header>
+        <!-- Page Content -->
+        <div class="container" id="article">
+
+            <div class="row">
+
+                <!-- Post Content Column -->
+                <div class="col-lg-8">
+
+                    <!-- Post Content -->
+                    <hr>
+                    <blockquote class="blockquote">
+                        <p class="mb-0">“Machine learning uses data, and this data is going to be used to train the
+                            model, and the model is then used for predictions.”</p>
+                    </blockquote>
+                    <hr>
+                    <h4>What?</h4>
+                    <p>One of the most frequently used buzzword in the world of data is <b>Machine
+                            Learning</b>.
+                        <br>First of
+                        all it's importent to understand that machine learning (ML) is a subset of AI. Machine Learning
+                        uses data to generate statistical code that
+                        will output the right result, based on the pattern recognized from previous examples of
+                        input.<br>But how do we create this model that thinks like an human? Most machine learning
+                        project go through same 8 steps to create the model, I will try to explain each step briefly.
+                    </p>
+                    Proper disclosure the decision on how to divide the steps, is my opinion only and can be considered
+                    as
+                    guidelines for you.
+                    <hr class="style3">
+                    <h4>Step 1 - Define the Machine Learning Problem Framing</h4>
+                    <p>The first step we need to do is to define our objectives and evaluate the problem that we are
+                        facing. <br>In Machine Learning
+                        our prediction are divided to 3 different main classification, depends on the ML
+                        Problem we need to answer:
+                        <ol type="1">
+                            <li>Binary classification</li>
+                            Predict the answer to a <b>Yes/No</b> question.
+                            <li>Multiclass solution</li>
+                            Predict the correct <b>category</b> from a list.
+                            <li>Regression</li>
+                            Predict the <b>value</b> of a numeric value.
+                        </ol>
+                        For example in the article built a model to decide if the image is a dog or not - a binary
+                        classification problem.
+                    </p>
+                    <img src="assets/img/blog/mlprocess/dog_or_cat.jpeg" class="blog-img" alt="" />
+                    <br>
+                    <hr class="style3">
+                    <h4>Step 2 - Data Collection and Integration</h4>
+                    <p>Data is everywhere and because it is everywhere, it can be collected from multiple sources like
+                        Internet, Databases, other types of Storage. Chances are, that some of the data you
+                        collect going to be <b>noisy</b> - your data is
+                        possibly incomplete even irrelevant. <br>So,
+                        wherever it comes from, it will need to be compiled - get integrated. Most importantly, you have
+                        to <b>clean</b> the data. First, you need to collect and integrate the data that's relevant to
+                        your
+                        problem. No matter what type of data you're collecting, you're going to need to make sure that
+                        you've got the proper tools and the knowledge to work with all different datatypes.
+                    </p>
+                    <p>This step is very important because the quality and quantity of data that you gather will
+                        directly determine how accurate your model can be.
+                    </p>
+                    <p>In a survey made by JetBrains in 2019 they asked the question "What do you use Python for?", the
+                        first answer was Data Analysis! python considered to be a good tool for working with data, the
+                        main
+                        libraries are <b>Pandas</b> which is an open source data analysis and manipulation tool, and
+                        <b>NumPy</b> which adds support for large, multi-dimensional arrays and matrices, along with a
+                        large collection of high-level mathematical functions to operate on these arrays. Master those
+                        two and job will be much easier.
+                        <br>I highely recommended to use those libary documentation.
+                    </p>
+                    <p>In this step we will obtain as much data as we can. If we will find irrelevant data for our
+                        purpose, such as the name of the owner and etc, we will keep the data we need.
+                    </p>
+                    <hr class="style3">
+                    <h4>Step 3 - Data Preparation</h4>
+                    <p>In the data prep phase, the main task is to manually and critically explore the data. You've got
+                        to look at it closely. Ask yourself questions like this, what features are there? That Step 1.
+                        Does it match your expectations? Is there enough information to make accurate predictions? If
+                        you just looked at it, what are you going to see? Here is a good rule of thumb. <i>If we as
+                            human, could look at a given data point and guess the correct label, then an ML algorithm
+                            should be
+                            successful there too.</i>
+                    </p>
+                    <hr class="style3">
+                    <h4>Step 4 - Data Visualization and Analysis</h4>
+                    <h6>Data Visualization</h6>
+                    <p>It can be hard to understand your data without seeing the data. That's why you need to do more
+                        than just a manual analysis, you need a programmatic analysis. This is what you get when you
+                        visualize the data. It's a technique that helps you understand the relationships within your
+                        dataset. This leads to better features, better models. When you can see the data in a chart or
+                        plotted out, you can help unveil previously unseen patterns. It reveals corrupt data or outliers
+                        that you don't want, properties that could be very significant in your analysis.</p>
+                    <img src="assets/img/blog/mlprocess/10-types-of-data-visualization.jpg" class="blog-img" alt="" />
+                    <p>There are many different plots that can visualize the data. Each plot can help us, and show us
+                        different information. Scatter plot will help us show the relationship between the features and
+                        the labels and see if there is a correlation between them.</p>
+                    <p>A model will suffer because of noisy data points like outliers or missing data. This results in
+                        less accurate predictions. So, we've been talking about in order to get accurate predictions,
+                        you have to get clean data. But there's more to that. You need an algorithm that makes sense for
+                        your business problem. Choosing the right algorithm for the job is another big step in this part
+                        of the ML pipeline.</p>
+                    <h6>Analysis</h6>
+                    <p>After we cleaned the data, using data visualization, from the noisy data. Another crucial step in
+                        the pipeline is selecting the right algorithm for the job. The number of algorithms is growing
+                        in our time. The types of machine learning algorithms differ in their approach, the type of data
+                        they input and output, and the type of task or problem that they are intended to solve.
+                    </p>
+                    The four main algorithms are:
+                    <ol type="1">
+                        <li>Supervised </li>
+                        Our labels and data will be known to us.
+                        <li>Unsupervised</li>
+                        Our labels and data will not be known to us. We can try to use Clustering – the machine will try
+                        to use the data point, and divide the information to groups based on the points. He will do it
+                        by finding patterns.
+                        <li>Reinforcement</li>
+                        In this algorithm the agent we make actions, and based on those actions, he will look on the
+                        changes to the environment and reward the action based on the success
+                        <li>Deep Learning</li>
+                        This is a subject for a few different posts. Deep Learning takes Machine Learning a step
+                        further. Rather than telling the machine what features it needs to look for, Deep Learning
+                        enables the machine to define the features it needs to look for itself based on the data it's
+                        being provided. Deep Learning processes information using similar but artificial processing
+                        structures known as artificial neural networks (ANN).
+                    </ol>
+                    <p>Here we will take a dive with the data. Find correlation in our data, what data has influence on
+                        our result and what only disturb our data.
+                    </p>
+                    <hr class="style3">
+                    <h4>Step 5 - Feature Selection</h4>
+                    <p>A feature is an attribute or property shared by all of the independent units on which analysis or
+                        prediction is to be done. Any attribute could be a feature, as long as it is useful to the
+                        model.<br>
+                        The purpose of a feature, other than being an attribute, would be much easier to understand in
+                        the
+                        context of a problem. <br>A feature is a characteristic that might help when solving the
+                        problem.</p>
+                    <p>In this important step, we will look for features that correlate to our desired output. A
+                        crucial part in this step is Feature Engineering – the process of manipulating the original data
+                        into new and potentially a lot of more useful features.
+                    </p>
+                    <hr class="style3">
+                    <h4>Step 6 - Training</h6>
+                        <p>Benjamin Franklin once said: <i>"Tell me and I forget, teach me and I may remember, involve
+                                me and I learn"</i>. The training often considered the bulk of machine learning.
+                        </p>
+                        <p>The first step we do when we start to train the data is to split the data to 2 sections:
+                            <ul>
+                                <li>Training Data – The data will include both the labels and the features</li>
+                                <li>Test Data – only features</li>
+                            </ul>
+                            In order to avoid the model be bias we will randomize the sections. Another subject we want
+                            to
+                            avoid is overfitting – the model learns the particulars of dataset to well – or underfitting
+                            where will not have enough features to model the data properly.</p>
+                        <p>We can measure this in 2 characteristics. <b>Bias</b> which is the gap between predicted
+                            value and
+                            actual value, and <b>Variance</b>, how dispersed your predicted values are.
+                            <img src="assets/img/blog/mlprocess/bias_variance.jpg" class="blog-img" alt="" />
+                        </p>
+                        <hr class="style3">
+                        <h4>Step 7 - Model Evaluation</h4>
+                        <p>One of the most effective ways to evaluate your model's accuracy, precision, and ability to
+                            recall involves looking at something called a confusion matrix. Now, the <b>confusion
+                                matrix</b>
+                            analyzes the model and shows how many of the data points were predicted correctly and
+                            incorrectly.
+                        </p>
+                        <img src="assets/img/blog/mlprocess/model-eva.jpg" class="blog-img" alt="" />
+                        <p>Accuracy = <sup>Correct Predictions</sup>/<sub>Total # Predictions</sub><br>
+                            Precision/Recall = <sup>True Positives</sup>/<sub>True Positives+False Negatives</sub>
+                        </p>
+                        <hr class="style3">
+                        <h4>Step 8 - Predictions</h4>
+                        <p>We can finally use our model to predict whether a given drink is dog ot not. <br>The word
+                            “prediction” can be misleading. In some cases, it really does mean that you are predicting a
+                            future outcome, other times, though, the “prediction” has to do with something that already
+                            occurred.
+                        </p>
+                        <hr class="style3">
+                        <h4></h4>
+                        <p class="blog-p">Machine learning is one of the hottest topic in the industry right now, it's
+                            relevantly new subject and highly growing. You
+                            might encounter article calling the pipeline the 6/7 or any number of steps (even 8 with
+                            different names), but all of them are the
+                            same thing in a different guise, every devloper has his own preferences!<br>
+                            In machine learning it's highly importent to work oragnize to reach our goals. Hope you
+                            enjoyed the post and learned something new even what not to do. <br><br>Take care,<br>MG
+                        </p>
+                </div>
+                <!-- Sidebar Widgets Column -->
+                <div class="col-md-4 sticky">
+                    <!-- Categories Widget -->
+                    <div class="card my-4" style="position: sticky; top: 75px;">
+                        <h5 class="card-header text-center">Buzzwords</h5>
+                        <button id="Generate" type="button" class="btn btn-light" onclick="makeBuzz('machine learning', 'classification', 'model', 'data', 'analysis',    
+                    'algorithm')">Generate</button>
+                        <div class="card-body">
+                            <div id="buzzwords"></div>
+                        </div>
+                    </div>
+                    <!-- Side Widget
+          <div class="card my-4">
+            <h5 class="card-header">Also Known</h5>
+            <div class="card-body">
+              <i>Scatter Graph, Point Graph, Scatter(X-Y), Scatter Chart or Scattergram.</i>
+            </div>
+          </div>  -->
+                </div>
+
+            </div>
+            <!-- /.row -->
+
+        </div>
+        <!-- /.container -->
+
+        <!-- Copyright Section-->
+        <section class="copyright py-4 text-center text-white">
+            <div class="container"><small>Copyright © Moshe Gotam 2020</small></div>
+        </section>
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!--Word Cloud Chart-->
+        <script src="https://cdn.anychart.com/releases/8.7.1/js/anychart-core.min.js"></script>
+        <script src="https://cdn.anychart.com/releases/8.7.1/js/anychart-tag-cloud.min.js"></script>
+        <!-- Contact form JS-->
+        <script src="js/blog-post.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!--ENDDDDDDDD-->
+</body>
+
+</html>
