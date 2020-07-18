@@ -59,6 +59,16 @@
     max-height:29rem;
 }
 
+.profileHead {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../assets/img/project/elections/project_profile_cover.png");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+}
+
 .teamHead {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url("../assets/img/project/elections/team_cover.jpg");
