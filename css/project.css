@@ -1,0 +1,122 @@
+/* Three columns side by side */
+.column {
+    float: left;
+    width: 25%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+/* Add some shadows to create a card effect */
+.card,
+.card-header,
+.card-body,
+.card-footer {
+    border-radius: 0px !important;
+}
+
+/* Some left and right padding inside the container */
+.container {
+    padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after,
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: grey;
+}
+
+.img-team {
+    border-radius: 50%;
+    max-width: 150px;
+    max-height: 150px;
+    align-self: center;
+    border: 3px #000 solid;
+}
+
+.m-team {
+    border-radius: 50%;
+    max-width: 150px;
+    max-height: 150px;
+    align-self: center;
+}
+
+.team-card {
+    max-width: 22rem;
+    max-height:29rem;
+}
+
+.teamHead {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../assets/img/project/elections/team_cover.jpg");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+}
+
+.goal {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../assets/img/project/elections/goal_cover.png");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+}
+
+.profile {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../assets/img/project/elections/profile_cover.png");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+}
+
+.bot {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../assets/img/project/elections/bot_cover.jpg");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+}
+
+.feature {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../assets/img/project/elections/feature_cover.png");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+}
+
+.project-p:first-letter {
+    float: left;
+    font-size: 45px;
+    line-height: 1;
+    font-weight: bold;
+    margin-right: 0px;
+}
+
+.a-team {
+    color: #000;
+}
