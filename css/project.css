@@ -56,7 +56,12 @@
 
 .team-card {
     max-width: 22rem;
-    max-height:29rem;
+    max-height:23rem;
+    min-height: 23rem;
+}
+
+.card-text {
+    justify-content: center;
 }
 
 .profileHead {
