@@ -5,6 +5,53 @@
     */
     (function($) {
     "use strict"; // Start of use strict
+
+    //////////////////////////////////////////////////////////////////////
+    /////////////////////////////// dark mode ////////////////////////////
+    /////////////////////////////////////////////////////////////////////
+    
+    var loc = window.location.pathname;
+    var dir = loc.substring(0, loc.lastIndexOf("/"));
+    var dir = dir.substring(dir.lastIndexOf("/") + 1);
+    
+    var cssPath = 'css/';
+    if (dir != 'mosheg23.github.io'){
+      cssPath = '../css/';
+    }
+
+    // console.log(dir);
+
+    let theme = localStorage.getItem('theme');
+
+    let themeDots = document.getElementsByClassName('theme-dot');
+
+    if (theme == null){
+      setTheme('light');
+    }else {
+      setTheme(theme);
+    }
+
+    for (var i = 0; themeDots.length > i; i++){
+      themeDots[i].addEventListener('click', function(){
+        let mode = this.dataset.mode;
+        setTheme(mode);
+      })
+    }
+
+    function setTheme(mode) {
+      if (mode == 'light'){
+        document.getElementById('theme-style').href = cssPath + 'styles-light.css';
+        themeDots[0].classList.add("active");
+        themeDots[1].classList.remove("active");
+      }
+      if (mode == 'dark') {
+        document.getElementById('theme-style').href = cssPath + 'styles-dark.css';
+        themeDots[1].classList.add("active");
+        themeDots[0].classList.remove("active");
+      }
+
+      localStorage.setItem('theme', mode);
+    }
   
     // Smooth scrolling using jQuery easing
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {

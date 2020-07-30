@@ -15,16 +15,24 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
             type="text/css" />
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
-        <!-- Core theme CSS)-->
+        <!-- Core theme CSS)
+        <link href="../css/styles-light.css" rel="stylesheet" />-->
         <link href="../css/project.css" rel="stylesheet" />
-        <link href="../css/styles.css" rel="stylesheet" />
+        <link id="theme-style" href="" rel="stylesheet" />
         <link rel="icon" href="../assets/img/me.ico" />
     </head>
 
     <body id="page-top">
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="../index.html">Home Page</a><button
+                <a class="navbar-brand js-scroll-trigger" href="../index.html">Home Page</a>
+            <div id="theme-options">
+                <button data-mode="light" id="light-mode" class="btn btn-outline-light btn-sm active theme-dot"><span
+                        class="iconify" data-icon="bx:bxs-sun" data-inline="false"></span></button>
+                <button data-mode="dark" id="dark-mode" class="btn btn-outline-light btn-sm theme-dot"><span
+                        class="iconify" data-icon="bx:bxs-moon" data-inline="false"></span></button>
+            </div>
+                <button
                     class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
                     type="button" data-toggle="collapse" data-target="#navbarResponsive"
                     aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu <i
@@ -84,7 +92,8 @@
                     <div class="card p-1 text-light">
                         <div class="card-body bot">
                             <h5 class="card-title">What is a Social Bot?</h5>
-                            <p class="card-text project-p">Social media in recent years saw a surge in use and exposure.
+                            <p class="card-text white project-p">Social media in recent years saw a surge in use and
+                                exposure.
                                 While
                                 most users are controlled by human, some control by automate agent or human with robotic
                                 behavior.<br>Those users try to imitating humans to manipulate discussions, spread "Fake
@@ -94,10 +103,12 @@
                     <div class="card text-dark">
                         <div class="card-body">
                             <h5 class="card-title">Data Collection</h5>
-                            <p class="card-text">We collected post and comments of each candidate in the elections with
+                            <p class="card-text white">We collected post and comments of each candidate in the elections
+                                with
                                 a <b>Crawler</b> based on selenium. <br>We saved the data in JSON and uploaded it to AWS
                                 server.</p>
-                            <p class="card-text">In addition, we chose selectively group of users - randomly, comments
+                            <p class="card-text white">In addition, we chose selectively group of users - randomly,
+                                comments
                                 number, elections activity and selected post - and manually scan the user to add
                                 features and ruling whatever the user is a bot.</p>
                         </div>
@@ -105,31 +116,34 @@
                     <div class="card">
                         <div class="card-body goal">
                             <h5 class="card-title">Main Goal</h5>
-                            <p class="card-text">Building a machine learning model to predict user/comment credibility -
+                            <p class="card-text white">Building a machine learning model to predict user/comment
+                                credibility -
                                 whatever his is a Social Bot (or sybil account)</p>
                         </div>
                     </div>
                     <div class="card">
                         <img class="card-img" src="../assets/img/project/elections/bots.jpg" alt="Card image">
                     </div>
-                    <div class="card text-center bg-dark">
-                        <div class="card-body">
+                    <div class="card text-center">
+                        <div class="card-body bg-dark">
                             <h5 class="card-title">Data Analysis</h5>
-                            <p class="card-text">Using multiple data visualiztion tools such as python libaries -
+                            <p class="card-text white">Using multiple data visualiztion tools such as python libaries -
                                 mathplotlib, seaborn and creating ElasticSearch dashboard to examine our data.</p>
                         </div>
                     </div>
-                    <div class="card text-center bg-dark">
-                        <div class="card-body">
+                    <div class="card text-center">
+                        <div class="card-body bg-dark">
                             <h5 class="card-title">Classification System</h5>
-                            <p class="card-text">We can group our features to x main classes:<br>Metadata, activity and
+                            <p class="card-text white">We can group our features to x main classes:<br>Metadata,
+                                activity and
                                 user profile.</p>
                         </div>
                     </div>
-                    <div class="card text-center bg-dark feature">
-                        <div class="card-body">
+                    <div class="card text-center">
+                        <div class="card-body bg-dark feature">
                             <h5 class="card-title">Feature Selection</h5>
-                            <p class="card-text">We checked each feature correlation with eachother and our ruling. Also
+                            <p class="card-text white">We checked each feature correlation with eachother and our
+                                ruling. Also
                                 we tried to create new metrics from our data such as posts per comments, elctions active
                                 etc.</p>
                         </div>
@@ -137,19 +151,19 @@
                     <div class="card text-center text-dark bg-light">
                         <div class="card-body">
                             <h5 class="card-title">Training The Model</h5>
-                            <p class="card-text">Work in Progress</p>
+                            <p class="card-text white">Work in Progress</p>
                         </div>
                     </div>
                     <div class="card text-center text-dark bg-light">
                         <div class="card-body">
                             <h5 class="card-title">Model Evaluation</h5>
-                            <p class="card-text">Work in Progress</p>
+                            <p class="card-text white">Work in Progress</p>
                         </div>
                     </div>
                     <div class="card text-center text-dark bg-light">
                         <div class="card-body">
                             <h5 class="card-title">Predictions</h5>
-                            <p class="card-text">Work in Progress</p>
+                            <p class="card-text white">Work in Progress</p>
                         </div>
                     </div>
                 </div>
@@ -221,7 +235,7 @@
                         <div class="card team-card">
                             <img class="img-team m-2" src="../assets/img/team/schler.jpg" alt="Schler"
                                 style="width:100%">
-                            <div class="card-text">
+                            <div class="card-text black">
                                 <h3>Jonathan Schler, PhD</h3>
                                 <p class="title">Lecturer</p>
                                 <p><a class="a-team" href="https://www.linkedin.com/in/schler/" target="_blank"><span
@@ -235,10 +249,10 @@
                         <div class="card team-card">
                             <img class="img-team m-2" src="../assets/img/team/tomer_v.jpg" alt="Tomer"
                                 style="width:100%">
-                            <div class="card-text">
+                            <div class="card-text black">
                                 <h3>Tomer Vainstein</h3>
-                                <p><a class="a-team" href="https://www.linkedin.com/in/tomer-vainstein/" target="_blank"><span
-                                            class="iconify" data-icon="brandico:linkedin-rect"
+                                <p><a class="a-team" href="https://www.linkedin.com/in/tomer-vainstein/"
+                                        target="_blank"><span class="iconify" data-icon="brandico:linkedin-rect"
                                             data-inline="false"></a></span>
                                 </p>
                             </div>
@@ -247,10 +261,10 @@
                     <div class="column">
                         <div class="card team-card">
                             <img class="m-team m-2" src="../assets/img/me.jpg" alt="Moshe" style="width:100%">
-                            <div class="card-text">
+                            <div class="card-text black">
                                 <h3>Moshe Gotam</h3>
-                                <p><a class="a-team" href="https://www.linkedin.com/in/moshe-gotam/" target="_blank"><span
-                                            class="iconify" data-icon="brandico:linkedin-rect"
+                                <p><a class="a-team" href="https://www.linkedin.com/in/moshe-gotam/"
+                                        target="_blank"><span class="iconify" data-icon="brandico:linkedin-rect"
                                             data-inline="false"></a></span>
                                 </p>
                             </div>
@@ -259,10 +273,10 @@
                     <div class="column">
                         <div class="card team-card">
                             <img class="img-team m-2" src="../assets/img/team/miki.jpg" alt="Miki" style="width:100%">
-                            <div class="card-text">
+                            <div class="card-text black">
                                 <h3>Miki Teplitsky</h3>
-                                <p><a class="a-team" href="https://www.linkedin.com/in/miki-teplitsky/" target="_blank"><span
-                                            class="iconify" data-icon="brandico:linkedin-rect"
+                                <p><a class="a-team" href="https://www.linkedin.com/in/miki-teplitsky/"
+                                        target="_blank"><span class="iconify" data-icon="brandico:linkedin-rect"
                                             data-inline="false"></a></span>
                                 </p>
                             </div>

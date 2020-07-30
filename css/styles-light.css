@@ -70,6 +70,10 @@ body {
   background-color: #fff;
 }
 
+body * {
+  transition: 0.2s;
+}
+
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
 }
@@ -3550,7 +3554,7 @@ input[type=button].btn-block {
   background: no-repeat 50%/50% 50%;
 }
 
-.custom-checkbox .custom-control-label::before {
+/* .custom-checkbox .custom-control-label::before {
   border-radius: 0.5rem;
 }
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
@@ -3578,7 +3582,7 @@ input[type=button].btn-block {
 }
 .custom-radio .custom-control-input:disabled:checked ~ .custom-control-label::before {
   background-color: rgba(26, 188, 156, 0.5);
-}
+} */
 
 .custom-switch {
   padding-left: 2.25rem;
@@ -9966,6 +9970,8 @@ h3 {
 }
 .page-section {
   padding: 6rem 0;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
 }
 .page-section .page-section-heading {
   font-size: 2.25rem;
