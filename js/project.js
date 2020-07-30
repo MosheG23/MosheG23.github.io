@@ -30,3 +30,39 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
 }
+
+    //////////////////////////////////////////////////////////////////////
+    /////////////////////////////// dark mode ////////////////////////////
+    /////////////////////////////////////////////////////////////////////
+
+    // let theme = localStorage.getItem('theme');
+
+    // let themeDots = document.getElementsByClassName('theme-dot');
+
+    // if (theme == null) {
+    //     setTheme('light');
+    // } else {
+    //     setTheme(theme);
+    // }
+
+    // for (var i = 0; themeDots.length > i; i++) {
+    //     themeDots[i].addEventListener('click', function () {
+    //         let mode = this.dataset.mode;
+    //         setTheme(mode);
+    //     })
+    // }
+
+    // function setTheme(mode) {
+    //     if (mode == 'light') {
+    //         document.getElementById('theme-style').href = '../css/styles-light.css';
+    //         themeDots[0].classList.add("active");
+    //         themeDots[1].classList.remove("active");
+    //     }
+    //     if (mode == 'dark') {
+    //         document.getElementById('theme-style').href = '../css/styles-dark.css';
+    //         themeDots[1].classList.add("active");
+    //         themeDots[0].classList.remove("active");
+    //     }
+
+    //     localStorage.setItem('theme', mode);
+    // }
