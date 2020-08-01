@@ -112,7 +112,7 @@
             </div>
             <p style="text-align:center">Don't judge a book by it's cover, but here are some of my projetes, enjoy.<br>
                 <small>I highly reccomened entering the project page (if available)</small></p>
-            <hr style="border-top: #000000 dotted 1px;" />
+            <hr class="hr-light" />
             <!-- Portfolio Grid Items-->
             <div class="row" id="Portfolio">
                 <ul class="flex-container">
@@ -123,8 +123,8 @@
                             data-target="#portfolioModal7">
                             <div
                                 class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i
-                                        class="fas fa-plus fa-3x"></i></div>
+                                <div class="portfolio-item-caption-content text-center text-uppercase text-white"><i
+                                        class="fas fa-plus fa-3x"></i><br>Read More</div>
                             </div>
                             <img class="img-fluid" src="assets/img/portfolio/Project7.PNG" alt="java" />
                         </div>
@@ -136,8 +136,8 @@
                             data-target="#portfolioModal1">
                             <div
                                 class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i
-                                        class="fas fa-plus fa-3x"></i></div>
+                                <div class="portfolio-item-caption-content text-center text-uppercase text-white"><i
+                                        class="fas fa-plus fa-3x"></i><br>Read More</div>
                             </div>
                             <img class="img-fluid" src="assets/img/portfolio/Project1.PNG" alt="python" />
                         </div>
@@ -150,8 +150,8 @@
                             data-target="#portfolioModal2">
                             <div
                                 class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i
-                                        class="fas fa-plus fa-3x"></i></div>
+                                <div class="portfolio-item-caption-content text-center text-uppercase text-white"><i
+                                        class="fas fa-plus fa-3x"></i><br>Read More</div>
                             </div>
                             <img class="img-fluid" src="assets/img/portfolio/Project2.PNG" alt="python" />
                         </div>
@@ -162,8 +162,8 @@
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
                             <div
                                 class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i
-                                        class="fas fa-plus fa-3x"></i></div>
+                                <div class="portfolio-item-caption-content text-center text-uppercase text-white"><i
+                                        class="fas fa-plus fa-3x"></i><br>Read More</div>
                             </div>
                             <img class="img-fluid" src="assets/img/portfolio/Project5.PNG" alt="java" />
                         </div>
@@ -189,6 +189,19 @@
             <ul class="flex-container">
                 <li class="flex-item">
                     <div class="card-deck">
+                    <!-- Kaggle Article
+                        <div class="card text-dark bg-light mb-3" style="max-width: 18rem; max-height:22rem;">
+                            <div class="card-header">Getting Started With Kaggle</div>
+                            <div class="card-body">
+                                <a href="blog/Kaggle.html"><img class="card-img-top"
+                                        src="assets/img/blog/kaggle/Kaggle.png" style="max-width: 150px"
+                                        alt="Card image cap"></a>
+                                <br><span class="badge badge-pill badge-info">Guide</span>
+                                <p class="card-text">A walkthrough the steps of Machine Learning pipeline, from defining
+                                    the problem to making predictions</p>
+                                <p class="card-text"><small class="text-muted">Posted 31, July 2020</small></p>
+                            </div>
+                        </div>-->
                         <div class="card text-dark bg-light mb-3" style="max-width: 18rem; max-height:22rem;">
                             <div class="card-header">8 Steps in ML Project</div>
                             <div class="card-body">
@@ -325,6 +338,10 @@
                         <a class="btn btn-outline-light btn-social mx-1" target="_blank"
                             href="https://github.com/MosheG23"><i class="fab fa-github"></i></a>
                     </div>
+                    <h4 class="text-uppercase mt-4">Spreed the word!</h4>
+                    <!--Linkedin-->
+                        <a class="btn btn-outline-light btn-social mx-1" target="_blank"
+                            href="https://www.linkedin.com/sharing/share-offsite/?url=https://mosheg23.github.io"><i class="fab fa-fw fa-linkedin-in"></i></a>
                 </div>
         </div>
     </section>
@@ -364,7 +381,8 @@
                                         | <span class="iconify" data-icon="logos:selenium" data-inline="false"></span>
                                     </div>
                                 </div>
-                                <a href="project/elections.html" class="badge badge-primary">Project Page</a>
+                                <a class="btn btn-dark" href="project/elections.html">
+                                    Project Page</a>
                                 <!-- Portfolio Modal - Text-->
                                 <p class="mb-5">Building a machine learning model to predict user/comment
                                     credibility.<br>Using a crawler (with selenium) for data mining posts and comments.
@@ -404,9 +422,6 @@
                                         <span class="dot" onclick="currentSlide(3)"></span>
                                     </div>
                                 </div>
-
-                                <button class="btn btn-primary" href="#" data-dismiss="modal"><i
-                                        class="fas fa-times fa-fw"></i>Close Window</button>
                             </div>
                         </div>
                     </div>
@@ -433,6 +448,8 @@
                                     <div class="divider-custom-icon"><span class="iconify" data-icon="logos:python"
                                             data-inline="false"></span></div>
                                 </div>
+                                <a class="btn btn-dark" href="https://github.com/MosheG23/battleship" target="_blank">
+                                    <i class="fab fa-github"></i> Source Code</a>
                                 <!-- Portfolio Modal - Text-->
                                 <p class="mb-5">The famous game. <br>
                                     Used PyGame to implement the game. The code based on Object-Oriented Programming.
@@ -464,10 +481,6 @@
                                         <span class="dot" onclick="currentSlide(2)"></span>
                                     </div>
                                 </div>
-                                <a class="btn btn-dark" href="https://github.com/MosheG23/battleship" target="_blank">
-                                    <i class="fab fa-github"></i> Source Code</a>
-                                <button class="btn btn-primary" href="#" data-dismiss="modal"><i
-                                        class="fas fa-times fa-fw"></i>Close Window</button>
                             </div>
                         </div>
                     </div>
@@ -494,6 +507,9 @@
                                     <div class="divider-custom-icon"><span class="iconify" data-icon="logos:python"
                                             data-inline="false"></span></div>
                                 </div>
+                                <a class="btn btn-dark" href="https://github.com/MosheG23/NCAAToNBA-WebScraping"
+                                    target="_blank">
+                                    <i class="fab fa-github"></i> Source Code</a>
                                 <!-- Portfolio Modal - Text-->
                                 <p class="mb-5">A machine learning project to try to predict the NBA 2019 draft.
                                     Using a database of the NBA players (and their college career),
@@ -535,11 +551,6 @@
                                         <span class="dot" onclick="currentSlide(3)"></span>
                                     </div>
                                 </div>
-                                <a class="btn btn-dark" href="https://github.com/MosheG23/NCAAToNBA-WebScraping"
-                                    target="_blank">
-                                    <i class="fab fa-github"></i> Source Code</a>
-                                <button class="btn btn-primary" href="#" data-dismiss="modal"><i
-                                        class="fas fa-times fa-fw"></i>Close Window</button>
                             </div>
                         </div>
                     </div>
@@ -569,6 +580,8 @@
                                         <span class="iconify" data-icon="logos:sqlite" data-inline="false"></span>
                                     </div>
                                 </div>
+                                <a class="btn btn-dark" href="https://github.com/MosheG23/TeamManger" target="_blank">
+                                    <i class="fab fa-github"></i> Source Code</a>
                                 <!-- Portfolio Modal - Text-->
                                 <p class="mb-5">An app for managing a compney - has unique users for each
                                     deparment<br>An Object-Oriented Programming project - mainly using polymorphism,
@@ -576,10 +589,6 @@
                                     suitable to work offline.</p>
                                 <!-- Portfolio Modal - Image-->
                                 <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Project5.PNG" alt="" />
-                                <a class="btn btn-dark" href="https://github.com/MosheG23/TeamManger" target="_blank">
-                                    <i class="fab fa-github"></i> Source Code</a>
-                                <button class="btn btn-primary" href="#" data-dismiss="modal"><i
-                                        class="fas fa-times fa-fw"></i>Close Window</button>
                             </div>
                         </div>
                     </div>

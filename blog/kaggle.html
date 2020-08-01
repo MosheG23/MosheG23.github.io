@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Getting Started With Kaggle.com</title>
+    <!-- Font Awesome & iconify icons-->
+    <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <!-- Core theme CSS)-->
+    <link href="../css/blog.css" rel="stylesheet" />
+    <link id="theme-style" href="" rel="stylesheet" />
+    <link rel="icon" href="../assets/img/me.ico" />
+</head>
+
+<body id="page-top">
+    <div>
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">Blog-MG</a>
+                <button
+                    class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
+                    type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu <i
+                        class="fas fa-bars"></i></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a
+                                class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="../index.html">Return
+                                To
+                                Home Page</a></li>
+                    </ul>
+                </div>
+                <div id="theme-options">
+                    <button data-mode="light" id="light-mode"
+                        class="btn btn-outline-light btn-sm active theme-dot"><span class="iconify"
+                            data-icon="bx:bxs-sun" data-inline="false"></span></button>
+                    <button data-mode="dark" id="dark-mode" class="btn btn-outline-light btn-sm theme-dot"><span
+                            class="iconify" data-icon="bx:bxs-moon" data-inline="false"></span></button>
+                </div>
+            </div>
+        </nav>
+        <!--Header-->
+        <header class="masthead text-center">
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Masthead Heading-->
+                <h1 class="masthead-heading text-uppercase mb-3">Getting Started With <br>Kaggle.com</h1>
+                <p class="lead">
+                    <i>by Moshe Gotam</i>
+                </p>
+                <div class="divider-custom divider-dark">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><span class="iconify" data-icon="et:browser"
+                            data-inline="false"></span></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <div class="level">
+                    <div class="level-left">
+                        <p class="has-text-info" id="readingTime">Reading Time: 0 min read</p>
+                    </div>
+                </div>
+                <!-- Date/Time -->
+                <p>Posted on July 31, 2020</p>
+                <!-- Masthead Avatar Image--><img class="img-fluid rounded"
+                    src="../assets/img/blog/kaggle/Kaggle_logo.png" alt="" />
+                <!-- Icon Divider-->
+            </div>
+        </header>
+        <!-- Page Content -->
+        <div class="container" id="article">
+
+            <div class="row">
+
+                <!-- Post Content Column -->
+                <div class="col-lg-8">
+
+                    <!-- Post Content -->
+                    <p class="blog-p">What happens when you mix competition and data science? <b>Kaggle</b>!<br>
+                        Kaggle is a site that offers a public platform to machine learning problems to any levels, from
+                        begginers to experts.<br>
+                        Kaggle also offers many different services:<br>
+                        <ul>
+                            <li><u>Kaggle Kernels:</u> a cloud-based workbench for data science and machine learning.
+                                Allows
+                                data scientists to share code and analysis in Python and R. Over 150K "kernels" (code
+                                snippets) have been shared on Kaggle covering everything from sentiment analysis to
+                                object detection.</li>
+                            <li><u>Public datasets platform:</u> have an idea but don't have a good dataset? Kaggle
+                                community members got you covered, community members share datasets with each other. Has
+                                datasets
+                                on everything from bone x-rays to results from boxing bouts - currently 47,679 datasets.
+                            </li>
+                            <li><u>Kaggle Learn:</u> for short-form AI education, from january 2020 everyone who
+                                finishes a course will now receive a completion certificate.</li>
+                            <li><u>Jobs board:</u> employers post machine learning and AI jobs.</li>
+                        </ul>
+                    </p>
+                    <hr class="style3">
+                    <h2>How do I even start?</h2>
+                    Kaggle can be looking very intimidating - some competition can be against teams of experienced Ph.D
+                    researchers, many subjects, dataset, courses etc. How do I even start?<br>
+                    Let's take one step at a time.<br>
+                    First you a choise between two languages - Python and R.
+                </div>
+                <!-- Sidebar Widgets Column -->
+                <div class="col-md-4 sticky">
+                    <!-- Categories Widget -->
+                    <div class="card my-4" style="position: sticky; top: 75px;">
+                        <h5 class="card-header text-center">Buzzwords</h5>
+                        <button id="Generate" type="button" class="btn btn-light" onclick="makeBuzz('machine learning', 'classification', 'model', 'data', 'analysis',    
+                    'algorithm')">Generate</button>
+                        <div class="card-body">
+                            <div id="buzzwords"></div>
+                        </div>
+                    </div>
+                    <!-- Side Widget
+          <div class="card my-4">
+            <h5 class="card-header">Also Known</h5>
+            <div class="card-body">
+              <i>Scatter Graph, Point Graph, Scatter(X-Y), Scatter Chart or Scattergram.</i>
+            </div>
+          </div>  -->
+                </div>
+
+            </div>
+            <!-- /.row -->
+
+        </div>
+        <!-- /.container -->
+
+        <!-- Copyright Section-->
+        <section class="copyright py-4 text-center text-white">
+            <div class="container"><small>inspierd by <a href="https://startbootstrap.com/themes/freelancer/"
+                        target="_blank">freelancer from StartBootStrap</a>
+                    <br>Moshe Gotam • 2020-<b>Present</b></small></div>
+        </section>
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!--Word Cloud Chart-->
+        <script src="https://cdn.anychart.com/releases/8.7.1/js/anychart-core.min.js"></script>
+        <script src="https://cdn.anychart.com/releases/8.7.1/js/anychart-tag-cloud.min.js"></script>
+        <!-- Contact form JS-->
+        <script src="../js/blog-post.js"></script>
+        <!-- Core theme JS-->
+        <script src="../js/scripts.js"></script>
+        <!--ENDDDDDDDD-->
+</body>
+
+</html>
