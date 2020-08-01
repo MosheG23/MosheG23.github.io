@@ -5470,8 +5470,9 @@ a.close.disabled {
   pointer-events: auto;
   background-color: #fff;
   background-clip: padding-box;
-  border: 0 solid rgba(0, 0, 0, 0.2);
-  border-radius: 0.75rem;
+  /* border: 0 solid rgba(0, 0, 0, 0.2); */
+  /* border-radius: 0.75rem; */
+  border: double;
   outline: 0;
 }
 
@@ -10170,7 +10171,7 @@ h3 {
   opacity: 1;
 }
 .portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .portfolio-modal .portfolio-modal-title {
@@ -10403,7 +10404,7 @@ form .row:first-child .floating-label-form-group {
   color: white;
   text-align: center;
   align-self: center;
-  /* padding: 5%; */
+  padding: 0.5rem;
 }
 
 /*/////////////////////////////////////////////////////////////////////
@@ -10619,4 +10620,8 @@ position: relative;
 
 hr.style2 {
   border-top: 3px double #8c8b8b;
+}
+
+.hr-light {
+  border-top: #000000 dotted 1px;
 }
