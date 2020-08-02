@@ -88,11 +88,17 @@
                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                         <div class="divider-custom-line"></div>
                     </div>
+                    
                     <div class="text-center mt-4 mb-2">
                         <a class="btn btn-l btn-outline-light" href="assets/resume/MosheGotam.pdf"><i
                                 class="far fa-file-pdf"></i> Resume - PDF Version</a>
                         <a class="btn btn-l btn-outline-light" href="assets/resume/MosheGotam.docx"><i
                                 class="far fa-file-word"></i> Resume - DOC Version</a>
+                    <!--
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#resume">
+                            <a class="btn btn-l btn-outline-light"><i
+                                    class="far fa-file-pdf"></i> Resume - PDF Version</a>
+                        </div>-->
                     </div>
                 </div>
             </div>
@@ -189,7 +195,7 @@
             <ul class="flex-container">
                 <li class="flex-item">
                     <div class="card-deck">
-                    <!-- Kaggle Article
+                        <!-- Kaggle Article
                         <div class="card text-dark bg-light mb-3" style="max-width: 18rem; max-height:22rem;">
                             <div class="card-header">Getting Started With Kaggle</div>
                             <div class="card-body">
@@ -338,10 +344,16 @@
                         <a class="btn btn-outline-light btn-social mx-1" target="_blank"
                             href="https://github.com/MosheG23"><i class="fab fa-github"></i></a>
                     </div>
-                    <h4 class="text-uppercase mt-4">Spreed the word!</h4>
+                    <h4 class="text-uppercase mt-4">Spread the word!</h4>
                     <!--Linkedin-->
+                    <div>
                         <a class="btn btn-outline-light btn-social mx-1" target="_blank"
-                            href="https://www.linkedin.com/sharing/share-offsite/?url=https://mosheg23.github.io"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                            href="https://www.linkedin.com/sharing/share-offsite/?url=https://mosheg23.github.io"><i
+                                class="fab fa-fw fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" target="_blank"
+                            href="http://www.facebook.com/sharer.php?u=https://mosheg23.github.io"><i
+                                class="fab fa-fw fa-facebook-f"></i></a>
+                    </div>
                 </div>
         </div>
     </section>
@@ -355,6 +367,45 @@
     <div class="scroll-to-top d-lg-none position-fixed">
         <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i
                 class="fa fa-chevron-up"></i></a>
+    </div>
+    <!--Resume Modal-->
+    <div class="portfolio-modal modal fade" id="resume" tabindex="-1" role="dialog"
+        aria-labelledby="portfolioModal7Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                </button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">My Resume</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom divider-dark">
+                                    <div class="divider-custom-icon">
+                                        <i class="fas fa-file-alt"></i>
+                                    </div>
+                                </div>
+                                <a class="btn btn-dark" href="project/elections.html">
+                                    PDF Version</a>
+                                <a class="btn btn-dark" href="project/elections.html">
+                                    DOC Version</a>
+                                <!-- Portfolio Modal - Text-->
+                                <object data="assets/resume/MosheGotam.pdf#view=FitH" type="application/pdf" width="100%"
+                                    height="100%">
+                                    <p>This browser does not support PDFs. Please
+                                        download the PDF/DOC to view it.
+                                </object>
+                                <!-- Portfolio Modal - Image-->
+                                <!-- Slideshow container -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- Portfolio Modals-->
     <!-- Portfolio Modal 1-->
