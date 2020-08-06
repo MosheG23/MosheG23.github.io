@@ -70,8 +70,8 @@ body {
   background-color: #fff;
 }
 
-body * {
-  transition: 0.1s;
+section * {
+  transition: 0.3s;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
