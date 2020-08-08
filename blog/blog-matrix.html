@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>The Confusion Matrix</title>
+    <!-- Font Awesome & iconify icons-->
+    <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <!-- Core theme CSS)-->
+    <link href="../css/blog.css" rel="stylesheet" />
+    <link id="theme-style" href="" rel="stylesheet" />
+    <link rel="icon" href="../assets/img/me.ico" />
+</head>
+
+<body id="page-top">
+    <div>
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">Blog-MG</a>
+                <button
+                    class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
+                    type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu <i
+                        class="fas fa-bars"></i></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a
+                                class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="../index.html">Return
+                                To
+                                Home Page</a></li>
+                    </ul>
+                </div>
+                <div id="theme-options">
+                    <button data-mode="light" id="light-mode"
+                        class="btn btn-outline-light btn-sm active theme-dot"><span class="iconify"
+                            data-icon="bx:bxs-sun" data-inline="false"></span></button>
+                    <button data-mode="dark" id="dark-mode" class="btn btn-outline-light btn-sm theme-dot"><span
+                            class="iconify" data-icon="bx:bxs-moon" data-inline="false"></span></button>
+                </div>
+            </div>
+        </nav>
+        <!--Header-->
+        <header class="masthead text-center">
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Masthead Heading-->
+                <h1 class="masthead-heading text-uppercase mb-3">Deconfusing <br><br>The Confusion Matrix</h1>
+                <p class="lead">
+                    <i>by Moshe Gotam</i>
+                </p>
+                <div class="divider-custom divider-dark">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><span class="iconify" data-icon="carbon:machine-learning"
+                            data-inline="false"></span></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <div class="level">
+                    <div class="level-left">
+                        <p class="has-text-info" id="readingTime">Reading Time: 0 min read</p>
+                    </div>
+                </div>
+                <!-- Date/Time -->
+                <p>Posted on August 8, 2020</p>
+                <!-- Masthead Avatar Image--><img class="img-fluid rounded"
+                    src="../assets/img/blog/matrix/blog_intro_head.png" alt="" />
+                <!-- Icon Divider-->
+            </div>
+        </header>
+        <!-- Page Content -->
+        <div class="container" id="article">
+
+            <div class="row">
+
+                <!-- Post Content Column -->
+                <div class="col-lg-8">
+
+                    <!-- Post Content -->
+                    <hr>
+                    <p class="blog-p">Confusion Matrix can be very confusing, many variables, true positive, false
+                        negative, false positive, F1 score and more.<br>
+                        The confusion matrix, also known as an error matrix, is a specific table layout that allows
+                        visualization of the performance of an algorithm, typically a supervised learning one (in
+                        unsupervised learning it is usually called a matching matrix), calculate the sensitivity and
+                        specificity of the model.
+                    </p>
+                    <hr>
+                    <h4>Evaluating the performance of a ML model</h4>
+                    <p>let’s assume that we had already fit the model with an algorithm(logistic regression or random
+                        forest classifier or XGBoost classifier etc.), the algorithm task is to classify whether a
+                        person is pregnant or not pregnant.<br>
+                        If the outcome is positive then the person is pregnant, if it's negative then he is not
+                        pregnant.
+                        <img src="../assets/img/blog/mlprocess/model-eva.jpg" class="blog-img" alt="" />
+                        <hr>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th colspan="3">Actual Values</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="3">Predicted Values</td>
+                                    <td></td>
+                                    <td>Negative(0)</td>
+                                    <td>Positive (1)</td>
+                                </tr>
+                                <tr>
+                                    <td>Negative(0)</td>
+                                    <td>TN - True Negative - <br>A person who is actually not pregnant
+                                        and
+                                        classified as not pregnant <br><b>Good prediction</b></td>
+                                    <td>FN - False Negative - <br>A person who is actually pregnant and
+                                        classified as not pregnant<br><b>Bad prediction</b></td>
+                                </tr>
+                                <tr>
+                                    <td>Positive (1)</td>
+                                    <td>FP - False Positive - <br>A person who is actually not pregnant
+                                        and
+                                        classified as pregnant<br><b>Bad prediction</b></td>
+                                    <td>TP - True Positive - <br>A person who is actually pregnant and
+                                        classified as pregnant <br><b>Good prediction</b></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <small>Note that the confusion matrix is only used for classification tasks, and as such cannot
+                            be used in
+                            regression models or other non-classification models.</small>
+                    </p>
+                    <h5> Confusion Metrix Mertics</h5>
+                    <p>we have a dataset of 100 people - <br>40 pregnant women and the remaining 60 are not pregnant
+                        women/men with a big belly. Our model confusion is:<br>
+                        <table style="margin: 0 auto; border:1px solid;text-align:center">
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td>Negative(0)</td>
+                                    <td>Positive (1)</td>
+                                </tr>
+                                <tr>
+                                    <td>Negative(0)</td>
+                                    <td>TN = 55</td>
+                                    <td>FN = 10</b></td>
+                                </tr>
+                                <tr>
+                                    <td>Positive (1)</td>
+                                    <td>FP = 5</td>
+                                    <td>TP = 30</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        Those variables will be used to calculate classification metrics:
+                        <h6>1. Accuracy</h6>
+                        <b>Equation:</b><br>
+                        <img src="../assets/img/blog/matrix/Accuracy.png" class="blog-img" alt="" />
+                        <p><b>Overview:</b> Measures how many observations, both positive and negative, were correctly
+                            classified (TP/TN).<br>
+                            Accuracy may not be a good measure if the dataset is not balanced - both negative and
+                            positive classes have different number of data instances.
+                            For example in our dataset of 100 persons - 90 of them are pregnant and 10 of
+                            them are not pregnant. The model classfy them as pregnant the accuracy will be <b>0.9</b>, a
+                            good
+                            score for a model right? Yes this model can't predict if the user is not pregnant.
+                        </p>
+                        <h6>2. Precision</h6>
+                        <b>Equation:</b><br>
+                        <img src="../assets/img/blog/matrix/Precision.png" class="blog-img" alt="" />
+                        <p><b>Overview:</b> Positive predictive value.<br>
+                            Precision calculate the precent of success of classifying the predicted positive values, so
+                            in the
+                            pregnancy example, precision = 30/(30 + 5) = <b>0.857</b>
+                        </p>
+                        <h6>3. Recall</h6>
+                        <b>Equation:</b><br>
+                        <img src="../assets/img/blog/matrix/Recall.png" class="blog-img" alt="" />
+                        <p><b>Overview:</b> Recall is also known as true positive rate<br>
+                            Recall calculate the precent of success of classifying the actual positive values, so in the
+                            pregnancy example, recall = 30/(30 + 10) = <b>0.75</b>
+                        </p>
+                        <h6>4. F1 score</h6>
+                        <img src="../assets/img/blog/matrix/F1Score.png" class="blog-img" alt="" />
+                        <p><b>Overview:</b> F1Score takes into account both precision and recall<br>
+                            Also calls F-measure. F1 score is the harmonic mean of precision and recall, in the
+                            pregnancy example, F1 Score = 2* ( 0.857 * 0.75)/(0.857 + 0.75) = <b>0.799</b>
+                        </p>
+                    </p>
+                    <hr>
+                    <h4>Further Reading</h4>
+                    <p>We have a utility function in sklearn library - plot_confusion_matrix: 
+                    <a
+                          class="a-dark" href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.plot_confusion_matrix.html"><small>sklearn.metrics.plot_confusion_matrix documentation</small></a>.<br>
+                    Few variables such as ROC/PR AUC can be read here: <a
+                          class="a-dark" href="https://neptune.ai/blog/f1-score-accuracy-roc-auc-pr-auc"><small>neptune.ai</small></a>.
+                    
+                    </p>
+                </div>
+                <!-- Sidebar Widgets Column -->
+                <div class="col-md-4 sticky">
+                    <!-- Categories Widget -->
+                    <div class="card my-4" style="position: sticky; top: 75px;">
+                        <h5 class="card-header text-center">Buzzwords</h5>
+                        <button id="Generate" type="button" class="btn btn-light" onclick="makeBuzz('machine learning', 'classification', 'model', 'data', 'analysis',    
+                    'algorithm')">Generate</button>
+                        <div class="card-body">
+                            <div id="buzzwords"></div>
+                        </div>
+                    </div>
+                    <!-- Side Widget
+          <div class="card my-4">
+            <h5 class="card-header">Also Known</h5>
+            <div class="card-body">
+              <i>Scatter Graph, Point Graph, Scatter(X-Y), Scatter Chart or Scattergram.</i>
+            </div>
+          </div>  -->
+                </div>
+
+            </div>
+            <!-- /.row -->
+
+        </div>
+        <!-- /.container -->
+        <!--Sharing Content
+        <div class="fixed-action-btn">
+            <a class="btn-floating btn-large red">
+                <i class="large material-icons">mode_edit</i>
+            </a>
+            <ul>
+                <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+                <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+                <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+                <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+            </ul>
+        </div>-->
+
+        <!-- Copyright Section-->
+        <section class="copyright py-4 text-center text-white">
+            <div class="container"><small>inspierd by <a href="https://startbootstrap.com/themes/freelancer/"
+                        target="_blank">freelancer from StartBootStrap</a>
+                    <br>Moshe Gotam • 2020-<b>Present</b></small></div>
+        </section>
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!--Word Cloud Chart-->
+        <script src="https://cdn.anychart.com/releases/8.7.1/js/anychart-core.min.js"></script>
+        <script src="https://cdn.anychart.com/releases/8.7.1/js/anychart-tag-cloud.min.js"></script>
+        <!-- Contact form JS-->
+        <script src="../js/blog-post.js"></script>
+        <!-- Core theme JS-->
+        <script src="../js/scripts.js"></script>
+        <!--ENDDDDDDDD-->
+</body>
+
+</html>
