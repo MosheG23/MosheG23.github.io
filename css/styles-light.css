@@ -168,6 +168,12 @@ a {
   text-decoration: none;
   background-color: transparent;
 }
+
+.a-dark {
+  color: #000000;
+  text-decoration: none;
+  background-color: transparent;
+}
 a:hover {
   color: #0055FF;
   text-decoration: underline;
