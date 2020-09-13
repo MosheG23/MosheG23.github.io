@@ -10428,6 +10428,7 @@ form .row:first-child .floating-label-form-group {
     background-size: cover;
     position: relative;
     background-position: center;
+    background-attachment: fixed;
 }
 
 .heroImage {
@@ -10440,6 +10441,7 @@ form .row:first-child .floating-label-form-group {
   background-size: cover;
   position: relative;
   border: 1px dotted #ffffff;
+  background-attachment: fixed;
   /* border-radius: 10%; */
 }
 
@@ -10460,6 +10462,7 @@ form .row:first-child .floating-label-form-group {
   width: 100%;
   background-size: cover;
   position: relative;
+  background-attachment: fixed;
   /* background-position: center; */
 }
 
@@ -10474,6 +10477,7 @@ height: 100%;
 width: 100%;
 background-size: cover;
 position: relative;
+background-attachment: fixed;
 /* background-position: center; */
 }
 
