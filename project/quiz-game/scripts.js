@@ -64,8 +64,6 @@ function selectAnswer(e) {
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextBtn.classList.remove("hide");
     } else {
-        summaryElement.classList.remove("hide");
-        summaryElement.innerText = `You got ${correctAnswers} answers right!`;
         startBtn.innerText = "New Game";
         startBtn.classList.remove("hide");
     }
