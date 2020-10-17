@@ -12,717 +12,949 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
         type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
-    <!-- Core theme CSS)
-    <link href="css/styles-light.css" rel="stylesheet" />-->
+    <!-- Core theme JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" 
+    integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+    <!--ENDDDDDDDD-->
+    <script defer src="js/scripts.js"></script>
+    <!-- Core theme CSS)!-->
     <link id="theme-style" href="" rel="stylesheet" />
     <link rel="icon" href="assets/img/me.ico" />
 </head>
 
-<body id="page-top">
+<body>
+    <!--<div class="loading__start">
+        <svg width="964" height="875" viewBox="0 0 964 875" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="undraw_greek_freak_j2qb 1" clip-path="url(#clip0)" filter="url(#filter0_dd)">
+            <g id="ballBack">
+            <path id="Vector_6" d="M908.239 415.841C908.429 522.499 867.503 625.127 793.969 702.385C793.469 702.915 792.959 703.445 792.449 703.975C753.642 744.431 707.059 776.626 655.497 798.626C603.935 820.627 548.458 831.979 492.398 832C436.339 832.022 380.854 820.713 329.275 798.752C277.696 776.791 231.088 744.632 192.25 704.205C191.739 703.676 191.229 703.146 190.729 702.616C117.458 625.538 76.4892 523.325 76.2401 416.978C75.991 310.631 116.481 208.227 189.39 130.806C189.879 130.266 190.389 129.736 190.899 129.206C229.737 88.3988 276.458 55.9051 328.23 33.6952C380.001 11.4853 435.745 0.021975 492.079 0.0003663C548.414 -0.0212424 604.166 11.3993 655.955 33.5695C707.743 55.7397 754.49 88.1975 793.359 128.975C793.869 129.505 794.379 130.034 794.87 130.574C867.774 207.651 908.348 309.747 908.239 415.841V415.841Z" fill="#3F3D56"/>
+            <path id="Vector_7" d="M908.239 415H76.239V417H908.239V415Z" fill="white"/>
+            <path id="Vector_8" d="M493.239 0.000335693H491.239V832H493.239V0.000335693Z" fill="white"/>
+            <path id="Vector_9" d="M310.286 278.89C292.452 236.714 266.6 198.402 234.163 166.079C220.747 152.656 206.279 140.325 190.899 129.206C190.389 129.736 189.879 130.266 189.39 130.806C278.244 194.932 336.194 299.35 336.239 417.06C336.284 534.27 278.904 638.352 190.729 702.616C191.229 703.146 191.739 703.676 192.25 704.205C207.2 693.287 221.278 681.222 234.356 668.119C284.262 618.134 318.14 554.409 331.665 485.081C345.189 415.754 337.746 343.968 310.286 278.89V278.89Z" fill="white"/>
+            <path id="Vector_10" d="M648.239 416.941C648.194 299.231 706.064 194.768 794.87 130.574C794.379 130.034 793.869 129.505 793.359 128.975C747.925 161.859 710.922 205.032 685.375 254.961C659.828 304.89 646.464 360.158 646.375 416.243C646.287 472.329 659.476 527.638 684.865 577.648C710.253 627.658 747.12 670.947 792.449 703.975C792.959 703.445 793.469 702.915 793.969 702.385C705.754 638.188 648.284 534.15 648.239 416.941Z" fill="white"/>
+            </g>
+            <g id="Greek Freak">
+            <path id="Vector_11" d="M390.955 704.422L388.184 759.842L417.279 765.384L425.592 712.735L390.955 704.422Z" fill="#9D616A"/>
+            <path id="Vector_12" d="M535.046 722.434L541.974 768.155H568.298L562.756 719.663L535.046 722.434Z" fill="#9D616A"/>
+            <path id="Vector_13" d="M396.497 597.739L390.955 661.472L385.413 715.506C385.413 715.506 406.195 707.193 425.592 719.663C425.592 719.663 438.062 716.892 435.291 662.857L447.76 606.052L396.497 597.739Z" fill="#EFEFEF"/>
+            <path id="Vector_14" d="M508.722 618.521C508.722 618.521 517.035 668.399 521.192 672.556C521.192 672.556 528.054 717.159 531.387 728.434C531.587 729.239 531.885 730.015 532.276 730.747C535.047 734.903 565.527 744.602 566.913 727.976C568.298 711.35 572.455 683.64 558.6 662.857L550.287 610.208L508.722 618.521Z" fill="#EFEFEF"/>
+            <path id="Vector_15" d="M592.545 612.287C591.159 627.527 514.957 624.756 501.102 624.756C496.723 624.756 491.099 624.077 488.299 616.512C483.506 603.586 480.873 584.701 479.986 577.317C479.627 584.161 476.467 600.731 468.57 611.345C463.762 617.829 455.81 616.54 447.067 615.058C432.547 612.591 403.687 603.613 395.804 605.359C383.335 608.13 368.33 608.407 368.094 605.359C367.986 603.693 367.996 602.022 368.122 600.357C369.951 571.705 396.497 494.034 396.497 488.285C396.497 481.357 408.966 452.262 408.966 452.262L536.432 437.021C536.432 437.021 586.919 573.216 593.861 606.745C594.456 609.64 592.656 611.081 592.545 612.287Z" fill="#EFEFEF"/>
+            <path id="Vector_16" d="M421.436 758.456L385.413 751.529L388.877 809.027L417.279 829.117C417.279 829.117 414.508 773.697 421.436 758.456Z" fill="#EFEFEF"/>
+            <path id="Vector_17" d="M568.298 754.3C568.298 754.3 550.287 765.384 535.047 754.3L547.516 805.563L568.298 802.792C568.298 802.792 577.997 772.311 568.298 754.3Z" fill="#EFEFEF"/>
+            <path id="Vector_18" d="M572.455 797.25C572.455 797.25 543.359 798.636 543.359 801.407V847.128C543.359 851.285 548.901 856.827 547.516 859.598C546.13 862.369 555.829 869.296 577.997 865.14C600.165 860.983 591.852 847.128 591.852 847.128C591.852 847.128 569.684 808.334 572.455 797.25Z" fill="#2F2E41"/>
+            <path id="Vector_19" d="M384.72 797.943C384.72 797.943 417.972 798.636 417.972 801.407V847.128C417.972 851.285 412.43 856.827 413.816 859.598C415.201 862.369 405.503 869.296 383.335 865.14C361.167 860.983 369.48 847.128 369.48 847.128C369.48 847.128 387.491 809.027 384.72 797.943Z" fill="#2F2E41"/>
+            <path id="Vector_20" d="M594.623 612.979C593.237 628.22 512.879 629.605 499.024 629.605C494.645 629.605 491.099 624.077 488.299 616.513C503.166 613.561 567.107 601.521 593.861 606.745C594.372 608.783 594.627 610.878 594.623 612.979V612.979Z" fill="#6C63FF"/>
+            <path id="Vector_21" d="M468.57 611.345C463.762 617.829 457.196 622.082 448.453 620.6C433.933 618.133 403.688 611.926 395.804 613.672C383.335 616.443 368.33 608.407 368.094 605.359C367.986 603.693 367.996 602.022 368.122 600.357C397.286 599.568 448.938 599.914 468.57 611.345Z" fill="#6C63FF"/>
+            <path id="Vector_22" d="M414.508 269.376C414.508 269.376 389.569 261.063 367.401 286.002L363.245 294.315C363.245 294.315 331.379 304.014 321.68 310.941C321.68 310.941 292.585 304.014 256.562 310.941L220.539 302.628C220.539 302.628 151.264 254.136 144.337 284.617C137.409 315.098 209.455 326.182 209.455 326.182L269.031 342.808C269.031 342.808 314.753 353.892 332.764 345.579C332.764 345.579 384.027 342.808 393.726 323.411L414.508 333.109V269.376Z" fill="#9D616A"/>
+            <path id="Vector_23" d="M500.409 262.449C500.409 262.449 551.672 256.907 571.069 283.231L611.249 294.315C611.249 294.315 655.585 286.002 672.211 290.159L708.234 280.46C708.234 280.46 742.871 225.04 762.268 240.281C781.665 255.521 716.547 304.014 716.547 304.014L629.26 333.109C629.26 333.109 561.371 338.651 547.516 313.712L532.276 348.35L474.085 334.495L500.409 262.449Z" fill="#9D616A"/>
+            <path id="Vector_24" d="M451.917 255.521C472.577 255.521 489.325 238.773 489.325 218.113C489.325 197.453 472.577 180.705 451.917 180.705C431.257 180.705 414.508 197.453 414.508 218.113C414.508 238.773 431.257 255.521 451.917 255.521Z" fill="#9D616A"/>
+            <path id="Vector_25" d="M432.52 240.281V270.762L446.375 319.254L487.94 270.762C487.94 270.762 476.856 237.51 476.856 231.968C476.856 226.426 432.52 240.281 432.52 240.281Z" fill="#9D616A"/>
+            <path id="Vector_26" d="M542.667 440.485C542.667 440.485 541.987 445.487 535.684 445.944C523.062 446.872 501.808 449.02 487.94 453.647C467.157 460.575 404.81 460.575 404.81 460.575L400.764 335.076L402.732 325.489C401.346 314.405 412.43 270.069 412.43 270.069L420.521 264.098L428.1 262.463L430.442 264.527C430.442 282.982 448.453 300.55 448.453 300.55C474.777 288.081 485.861 260.371 485.861 260.371L493.662 259.221L501.822 260.135L509.207 260.966L506.644 263.142L505.258 265.913C505.175 266.079 505.327 265.746 505.258 265.913C485.085 308.711 509.443 328.066 524.655 336.573C530.96 340.12 531.583 343.5 531.583 343.5C531.583 343.5 537.277 341.796 537.125 347.657C536.667 366.624 533.218 409.45 538.51 421.088C545.438 436.329 542.667 440.485 542.667 440.485Z" fill="#EFEFEF"/>
+            <path id="Vector_27" d="M412.43 192.823C413.327 189.749 414.381 186.723 415.589 183.758C417.168 180.131 415.589 169.253 417.168 169.253H423.486L431.384 162L436.122 165.627L442.44 162L450.337 165.627L458.235 162L470.87 171.066L474.029 169.253L477.188 174.692H478.768L485.086 183.758H488.244V192.823H491.403V216.394L487.247 232.661L485.861 224.679C485.861 224.57 485.826 224.464 485.761 224.377C485.696 224.29 485.604 224.226 485.499 224.195C485.395 224.165 485.283 224.169 485.181 224.207C485.079 224.245 484.992 224.315 484.933 224.406L481.927 229.085L479.997 221.704C477.221 210.648 470.701 200.895 461.548 194.102C449.859 185.621 432.963 181.582 415.589 205.515L412.43 192.823Z" fill="#2F2E41"/>
+            <path id="Vector_28" d="M420.521 264.098C417.889 280.1 409.936 324.353 400.764 335.076L400.653 331.724C399.268 320.64 408.966 266.605 408.966 266.605L420.521 264.098Z" fill="#6C63FF"/>
+            <path id="Vector_29" d="M493.662 259.221C486.706 272.355 466.783 306.258 447.76 304.014C429.402 301.852 427.878 274.447 428.1 262.463L432.52 261.507C432.52 279.962 449.146 295.701 449.146 295.701C475.47 283.231 483.852 258.126 483.852 258.126L493.662 259.221Z" fill="#6C63FF"/>
+            <path id="Vector_30" d="M539.203 338.651C539.203 338.651 539.051 342.364 538.899 348.225C535.043 348.017 531.218 347.423 527.482 346.451C484.684 335.16 497.195 277.038 501.822 260.135L509.207 260.966H509.221C509.428 261.16 509.65 261.368 509.872 261.576C489.699 304.374 512.712 325.184 527.925 333.691C531.497 335.741 535.278 337.404 539.203 338.651V338.651Z" fill="#6C63FF"/>
+            <path id="Vector_31" d="M546.13 445.334C546.13 445.334 541.987 445.487 535.684 445.944C532.522 434.342 529.996 422.575 528.119 410.697C526.29 397.895 526.872 366.403 527.482 346.452C527.648 341.228 527.8 336.781 527.925 333.691C531.497 335.741 535.278 337.404 539.203 338.651C539.203 338.651 539.051 342.364 538.899 348.225C538.441 367.192 538.067 408.757 543.359 420.395C550.287 435.636 546.13 445.334 546.13 445.334Z" fill="#6C63FF"/>
+            <path id="Vector_32" d="M416.587 350.32C416.587 350.32 460.922 329.108 503.873 350.32Z" fill="#6C63FF"/>
+            <path id="Vector_33" d="M407.239 461C407.239 461 420.239 460 452.239 463C484.239 466 537.239 446 537.239 446" fill="#CACACA"/>
+            <path id="Vector_34" d="M232.26 237.508V238.458C232.26 238.708 232.26 238.968 232.24 239.218C232 252.18 227.474 264.699 219.37 274.818C218.96 275.348 218.53 275.858 218.09 276.368C217.43 277.148 216.75 277.898 216.05 278.638C215.99 278.698 215.93 278.768 215.86 278.828L215.83 278.858C215.75 278.938 215.67 279.028 215.59 279.108C214.36 280.378 213.07 281.595 211.72 282.758C211.45 282.988 211.17 283.228 210.88 283.458C200.439 292.128 187.321 296.919 173.75 297.018C173.65 297.028 173.54 297.028 173.44 297.028H173.09C172.99 297.028 172.89 297.028 172.79 297.018C172.44 297.018 172.1 297.008 171.75 296.998C158.176 296.677 145.133 291.662 134.84 282.808C134.56 282.578 134.28 282.338 134.01 282.088C132.94 281.148 131.91 280.158 130.92 279.138C130.84 279.058 130.76 278.968 130.68 278.888L130.65 278.858C130.58 278.798 130.52 278.728 130.46 278.668C129.62 277.788 128.81 276.878 128.03 275.948C127.6 275.438 127.18 274.918 126.77 274.388C118.872 264.344 114.472 251.994 114.24 239.218C114.22 238.978 114.22 238.728 114.22 238.478V237.548C114.22 237.438 114.22 237.328 114.23 237.218C114.372 224.417 118.695 212.014 126.54 201.898C126.95 201.368 127.37 200.848 127.8 200.338C128.59 199.378 129.42 198.448 130.27 197.538C130.33 197.468 130.39 197.408 130.46 197.338C130.46 197.328 130.47 197.318 130.48 197.308C130.56 197.228 130.64 197.138 130.73 197.058C131.84 195.908 132.997 194.801 134.2 193.738C134.47 193.488 134.75 193.248 135.03 193.018C145.555 184.053 158.904 179.085 172.73 178.988C172.83 178.978 172.94 178.978 173.04 178.978H173.69C187.196 179.063 200.262 183.794 210.69 192.378C210.97 192.618 211.25 192.848 211.53 193.088C212.99 194.328 214.39 195.648 215.72 197.028C215.8 197.108 215.88 197.198 215.96 197.278L215.98 197.298C216.05 197.358 216.12 197.438 216.18 197.498C216.92 198.278 217.63 199.088 218.32 199.908C218.76 200.418 219.18 200.928 219.6 201.458C227.659 211.649 232.108 224.226 232.25 237.218C232.258 237.314 232.262 237.411 232.26 237.508V237.508Z" fill="#6C63FF"/>
+            <path id="Vector_35" d="M173.75 179.218H171.75V297.218H173.75V179.218Z" fill="white"/>
+            <path id="Vector_36" d="M232.26 237.218H113.75V239.218H232.26V237.218Z" fill="white"/>
+            <path id="Vector_37" d="M147.73 237.218C147.573 229.93 145.684 222.784 142.218 216.372C138.753 209.959 133.81 204.463 127.8 200.338C127.37 200.848 126.95 201.368 126.54 201.898C132.319 205.834 137.075 211.092 140.414 217.235C143.753 223.377 145.579 230.228 145.74 237.218C145.75 237.548 145.75 237.878 145.75 238.218C145.75 238.558 145.75 238.888 145.74 239.218C145.578 246.161 143.774 252.968 140.477 259.08C137.18 265.193 132.483 270.439 126.77 274.388C127.18 274.918 127.6 275.438 128.03 275.948C133.976 271.811 138.859 266.328 142.283 259.945C145.707 253.561 147.573 246.46 147.73 239.218C147.75 238.888 147.75 238.548 147.75 238.218C147.75 237.888 147.75 237.548 147.73 237.218Z" fill="white"/>
+            <path id="Vector_38" d="M199.76 239.218C199.75 238.888 199.75 238.558 199.75 238.218C199.75 237.878 199.75 237.548 199.76 237.218C199.925 230.097 201.817 223.122 205.273 216.893C208.729 210.664 213.645 205.367 219.6 201.458C219.18 200.928 218.76 200.418 218.32 199.908C212.139 204.007 207.041 209.542 203.462 216.039C199.884 222.536 197.931 229.802 197.77 237.218C197.75 237.548 197.75 237.888 197.75 238.218C197.75 238.548 197.75 238.888 197.77 239.218C197.93 246.586 199.859 253.807 203.396 260.273C206.932 266.739 211.972 272.259 218.09 276.368C218.53 275.858 218.96 275.348 219.37 274.818C213.479 270.899 208.62 265.617 205.206 259.419C201.792 253.221 199.924 246.292 199.76 239.218V239.218Z" fill="white"/>
+            </g>
+            <g id="ballSide">
+            <path id="Vector" d="M841.04 793.53V794.48C841.04 794.73 841.04 794.99 841.02 795.24C840.78 808.202 836.254 820.721 828.15 830.84C827.74 831.37 827.31 831.88 826.87 832.39C826.21 833.17 825.53 833.92 824.83 834.66C824.77 834.72 824.71 834.79 824.64 834.85L824.61 834.88C824.53 834.96 824.45 835.05 824.37 835.13C823.14 836.4 821.85 837.617 820.5 838.78C820.23 839.01 819.95 839.25 819.66 839.48C809.219 848.15 796.101 852.941 782.53 853.04C782.43 853.05 782.32 853.05 782.22 853.05H781.87C781.77 853.05 781.67 853.05 781.57 853.04C781.22 853.04 780.88 853.03 780.53 853.02C766.956 852.699 753.913 847.684 743.62 838.83C743.34 838.6 743.06 838.36 742.79 838.11C741.72 837.17 740.69 836.18 739.7 835.16C739.62 835.08 739.54 834.99 739.46 834.91L739.43 834.88C739.36 834.82 739.3 834.75 739.24 834.69C738.4 833.81 737.59 832.9 736.81 831.97C736.38 831.46 735.96 830.94 735.55 830.41C727.652 820.366 723.252 808.016 723.02 795.24C723 795 723 794.75 723 794.5V793.57C723 793.46 723 793.35 723.01 793.24C723.152 780.439 727.475 768.036 735.32 757.92C735.73 757.39 736.15 756.87 736.58 756.36C737.37 755.4 738.2 754.47 739.05 753.56C739.11 753.49 739.17 753.43 739.24 753.36C739.24 753.35 739.25 753.34 739.26 753.33C739.34 753.25 739.42 753.16 739.51 753.08C740.62 751.93 741.777 750.823 742.98 749.76C743.25 749.51 743.53 749.27 743.81 749.04C754.335 740.075 767.684 735.107 781.51 735.01C781.61 735 781.72 735 781.82 735H782.47C795.976 735.085 809.042 739.816 819.47 748.4C819.75 748.64 820.03 748.87 820.31 749.11C821.77 750.35 823.17 751.67 824.5 753.05C824.58 753.13 824.66 753.22 824.74 753.3L824.76 753.32C824.83 753.38 824.9 753.46 824.96 753.52C825.7 754.3 826.41 755.11 827.1 755.93C827.54 756.44 827.96 756.95 828.38 757.48C836.439 767.671 840.888 780.248 841.03 793.24C841.038 793.336 841.042 793.433 841.04 793.53V793.53Z" fill="#6C63FF"/>
+            <path id="Vector_2" d="M756.19 792.88C756.033 785.592 754.144 778.447 750.678 772.034C747.212 765.621 742.27 760.125 736.26 756C735.83 756.51 735.41 757.03 735 757.56C740.778 761.496 745.535 766.754 748.874 772.897C752.213 779.04 754.039 785.89 754.2 792.88C754.21 793.21 754.21 793.54 754.21 793.88C754.21 794.22 754.21 794.55 754.2 794.88C754.038 801.823 752.234 808.63 748.937 814.742C745.64 820.855 740.943 826.101 735.23 830.05C735.64 830.58 736.06 831.1 736.49 831.61C742.436 827.473 747.319 821.99 750.743 815.607C754.166 809.223 756.033 802.122 756.19 794.88C756.21 794.55 756.21 794.21 756.21 793.88C756.21 793.55 756.21 793.21 756.19 792.88Z" fill="white"/>
+            <path id="Vector_3" d="M808.01 795.31C808 794.98 808 794.65 808 794.31C808 793.97 808 793.64 808.01 793.31C808.175 786.189 810.067 779.214 813.523 772.985C816.979 766.756 821.895 761.459 827.85 757.55C827.43 757.02 827.01 756.51 826.57 756C820.389 760.099 815.291 765.634 811.712 772.131C808.134 778.628 806.181 785.894 806.02 793.31C806 793.64 806 793.98 806 794.31C806 794.64 806 794.98 806.02 795.31C806.18 802.678 808.109 809.899 811.646 816.365C815.182 822.831 820.222 828.351 826.34 832.46C826.78 831.95 827.21 831.44 827.62 830.91C821.729 826.991 816.87 821.709 813.456 815.511C810.042 809.314 808.174 802.384 808.01 795.31V795.31Z" fill="white"/>
+            <path id="Vector_4" d="M839.51 794H721V796H839.51V794Z" fill="white"/>
+            <path id="Vector_5" d="M782 736H780V854H782V736Z" fill="white"/>
+            </g>
+            </g>
+            <defs>
+            <filter id="filter0_dd" x="-4" y="0" width="971.5" height="874.436" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+            <feOffset dy="4"/>
+            <feGaussianBlur stdDeviation="2"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+            <feOffset dy="4"/>
+            <feGaussianBlur stdDeviation="2"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+            <feBlend mode="normal" in2="effect1_dropShadow" result="effect2_dropShadow"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow" result="shape"/>
+            </filter>
+            <clipPath id="clip0">
+            <rect width="963.5" height="866.436" fill="white"/>
+            </clipPath>
+            </defs>
+        </svg>
+        
+    </div>
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">Moshe Gotam</a>
-            <button
-                class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
-                type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
-                aria-expanded="false" aria-label="Toggle navigation">Menu <i class="fas fa-bars"></i></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                            href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                            href="#blog">Blog</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                            href="#about">About</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                            href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            <div id="theme-options">
-                <button data-mode="light" id="light-mode" class="btn btn-outline-light btn-sm active theme-dot"><span
-                        class="iconify" data-icon="bx:bxs-sun" data-inline="false"></span></button>
-                <button data-mode="dark" id="dark-mode" class="btn btn-outline-light btn-sm theme-dot"><span
-                        class="iconify" data-icon="bx:bxs-moon" data-inline="false"></span></button>
-            </div>
-        </div>
-    </nav>
-    <!-- Hero Section-->
-    <header class="masthead bg-primary text-center heroHead">
-        <div class="container d-flex align-items-center flex-column">
-            <!-- Masthead Heading-->
-
-            <!-- Masthead Avatar Image-->
-            <div class="heroImage">
-                <div class="heroContents">
-                    <h2 class="masthead-heading text-uppercase mb-0">Welcome To My Site</h2>
-                    <!-- Icon Divider-->
-                    <div class="divider-custom divider-light">
-                        <div class="divider-custom-line"></div>
-                        <div class="divider-custom-icon"><i class="fas fa-splotch"></i></div>
-                        <div class="divider-custom-line"></div>
-                    </div>
-                    <h2>Hi, I'm Moshe Gotam</h2>
-                    <p class="heroAbout">I am a Computer Science student with big interests in programming, data  and everything in
-                        between.
-                        <br>I built this site in order to
-                        share my projects and expand my knowledge. <br>Hope you enjoy.</p>
-                    <!-- Masthead Subheading-->
-                    <div class="masthead-subheading mb-0 mt-3 flex-container">
-                        <div class="heroSkills flex-item" data-tooltip="Python"><i class="fab fa-python"></i></div>
-                         <div class="heroSkills flex-item" data-tooltip="Java"><i class="fab fa-java"></i></div>
-                         <div class="heroSkills flex-item" data-tooltip="CSS"><i class="fab fa-css3-alt"></i></i></div>
-                         <div class="heroSkills flex-item" data-tooltip="JavaScript"><i class="fab fa-js"></i></div>
-                         <div class="heroSkills flex-item" data-tooltip="React"><i class="fab fa-react"></i></div>
-                    </div>
-                    <!-- About Section Button-->
-                    <!-- Icon Divider-->
-                    <div class="divider-custom divider-light">
-                        <div class="divider-custom-line"></div>
-                        <div class="divider-custom-icon"><i class="fas fa-splotch"></i></div>
-                        <div class="divider-custom-line"></div>
-                    </div>
-
-                    <div class="heroLinks text-center mt-4 mb-2">
-                        <a class="btn btn-l btn-outline-light" href="assets/resume/MosheGotam.pdf"><i
-                                class="far fa-file-pdf"></i> Resume - PDF Version</a>
-                        <a class="btn btn-l btn-outline-light" href="assets/resume/MosheGotam.docx"><i
-                                class="far fa-file-word"></i> Resume - DOC Version</a>
-                        <!--
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#resume">
-                            <a class="btn btn-l btn-outline-light"><i
-                                    class="far fa-file-pdf"></i> Resume - PDF Version</a>
-                        </div>-->
-                    </div>
+    <div id="page-top">
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">Moshe Gotam</a>
+                <button
+                    class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
+                    type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                    aria-expanded="false" aria-label="Toggle navigation">Menu <i class="fas fa-bars"></i></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="js-scroll-trigger nav-link py-3 px-0 px-lg-3 rounded "
+                                href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="js-scroll-trigger nav-link py-3 px-0 px-lg-3 rounded "
+                                href="#blog">Blog</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="js-scroll-trigger nav-link py-3 px-0 px-lg-3 rounded "
+                                href="#about">About</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="js-scroll-trigger nav-link py-3 px-0 px-lg-3 rounded "
+                                href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div id="theme-options">
+                    <button data-mode="light" id="light-mode" class="btn btn-outline-light btn-sm active theme-dot"><span
+                            class="iconify" data-icon="bx:bxs-sun" data-inline="false"></span></button>
+                    <button data-mode="dark" id="dark-mode" class="btn btn-outline-light btn-sm theme-dot"><span
+                            class="iconify" data-icon="bx:bxs-moon" data-inline="false"></span></button>
                 </div>
             </div>
-            <br>
-        </div>
-    </header>
-    <!-- Portfolio Section-->
-    <section class="page-section portfolio" id="portfolio">
-        <div class="container text-center">
-            <!-- Portfolio Section Heading-->
-            <h2 class="page-section-heading text-uppercase text-secondary mb-0">Portfolio</h2>
-            <!-- Icon Divider-->
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-briefcase"></i></i></div>
-                <div class="divider-custom-line"></div>
+        </nav>
+        <!-- Hero Section-->
+        <header class="masthead bg-primary text-center heroHead">
+            <div class="header__photo__date">Cancún, 16.08.2017
             </div>
-                <small>I highly reccomened entering the project page (if available)</small></p>
-            <hr class="hr-light" />
-            <!-- Portfolio Grid Items-->
-            <h3>Projects</h3>
-            <div id="Portfolio" class="mb-5">
-                <ul class="flex-container">
-                    <li class="flex-item dark ">
-                        <!-- Portfolio Item 4
-                        <div class="col-md-6 col-lg-4 mb-5">-->
-                        <h5>ELECTIONS OF ISRAEL 21/22/23</h5>
-                        <div class="portfolio-item mx-auto" data-toggle="modal" onclick="showSlidesProject('Project7')"
-                            data-target="#portfolioModal7">
-                            <div
-                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-uppercase text-white"><i
-                                        class="fas fa-plus fa-3x"></i><br>Read More</div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/gif/project7.gif" alt="java" />
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Masthead Heading-->
+                <!-- Masthead Avatar Image-->
+                <div class="heroImage">
+                    <div class="heroContents">
+                        <h2 class="masthead-heading text-uppercase mb-0">Welcome To My Site</h2>
+                        <!-- Icon Divider-->
+                        <div class="divider-custom divider-light">
+                            <div class="divider-custom-line"></div>
+                            <div class="divider-custom-icon"><i class="fas fa-splotch"></i></div>
+                            <div class="divider-custom-line"></div>
                         </div>
-                    </li>
-                    <li class="flex-item dark ">
-                        <!-- Portfolio Item 4
-                        <div class="col-md-6 col-lg-4 mb-5">-->
-                        <h5>COVID-19 DASHBOARD</h5>
-                        <div class="portfolio-item mx-auto" data-toggle="modal"
-                            data-target="#portfolioModal10">
-                            <div
-                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-uppercase text-white">
-                                    <i class="fas fa-plus fa-3x"></i><br>Read More</div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/gif/project10.gif" alt="java" />
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <h3 class="m-5">Mini Projects</h3>
-            <div id="miniPortfolio">
-                <div id="miniProject1" class="miniProject">
-                    <div class="front">
-                        <div class="portfolio-item mx-auto" data-toggle="modal"
-                            data-target="#portfolioModal6">
-                            <div
-                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-uppercase text-white"><i
-                                        class="fas fa-plus fa-3x"></i><br>Read More</div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/Project8.PNG" alt="java" />
-                        </div>
-                        <h5 class="front__name">Deni Avdija</h5>
-                        <div class="front__languages">
-                            <div class="heroSkills flex-item" data-tooltip="HTML"><i class="fab fa-html5"></i></div>
-                            <div class="heroSkills flex-item" data-tooltip="CSS"><i class="fab fa-css3-alt"></i></div>
-                        </div>
-                    </div>
-                    <div class="miniPorfolio__background">
-                        
-                    </div>
-                </div>
-                <div id="miniProject2" class="miniProject">
-                    <div class="front">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" onclick="showSlidesProject('Project1')"
-                            data-target="#portfolioModal1">
-                            <div
-                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-uppercase text-white"><i
-                                        class="fas fa-plus fa-3x"></i><br>Read More</div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/Project1.PNG" alt="java" />
-                        </div>
-                        <h5 class="front__name">BattleShips</h5>
-                        <div class="front__languages">
+                        <h2>Hi, I'm Moshe Gotam</h2>
+                        <p class="heroAbout">I am a Computer Science student with big interests in programming, data  and everything in
+                            between.
+                            <br>I built this site in order to
+                            share my projects and expand my knowledge. <br>Hope you enjoy.</p>
+                        <!-- Masthead Subheading-->
+                        <div class="masthead-subheading mb-0 mt-3 flex-container">
                             <div class="heroSkills flex-item" data-tooltip="Python"><i class="fab fa-python"></i></div>
-                        </div>
-                    </div>
-                    <div class="miniPorfolio__background">
-                        
-                    </div>
-                </div>
-                <div id="miniProject3" class="miniProject">
-                    <div class="front">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" onclick="showSlidesProject('Project2')"
-                            data-target="#portfolioModal2">
-                            <div
-                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-uppercase text-white"><i
-                                        class="fas fa-plus fa-3x"></i><br>Read More</div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/Project2.PNG" alt="java" />
-                        </div>
-                        <h5 class="front__name">NCAA To NBA</h5>
-                        <div class="front__languages">
-                            <div class="heroSkills flex-item" data-tooltip="Python"><i class="fab fa-python"></i></div>
-                        </div>
-                    </div>
-                    <div class="miniPorfolio__background">
-                        
-                    </div>
-                </div>
-                <div id="miniProject4" class="miniProject">
-                    <div class="front">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
-                            <div
-                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-uppercase text-white"><i
-                                        class="fas fa-plus fa-3x"></i><br>Read More</div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/Project5.PNG" alt="java" />
-                        </div>
-                        <h5 class="front__name">EZShift</h5>
-                        <div class="front__languages">
                             <div class="heroSkills flex-item" data-tooltip="Java"><i class="fab fa-java"></i></div>
-                        </div>
-                    </div>
-                    <div class="miniPorfolio__background">
-                        
-                    </div>
-                </div>
-                <div id="miniProject5" class="miniProject">
-                    <div class="front">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal9">
-                            <div
-                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-uppercase text-white"><i
-                                        class="fas fa-plus fa-3x"></i><br>Read More</div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/Project9.PNG" alt="java" />
-                        </div>
-                        <h5 class="front__name">Quiz Game</h5>
-                        <div class="front__languages">
+                            <div class="heroSkills flex-item" data-tooltip="CSS"><i class="fab fa-css3-alt"></i></i></div>
                             <div class="heroSkills flex-item" data-tooltip="JavaScript"><i class="fab fa-js"></i></div>
+                            <div class="heroSkills flex-item" data-tooltip="React"><i class="fab fa-react"></i></div>
                         </div>
-                    </div>
+                        <!-- About Section Button-->
+                        <!-- Icon Divider-->
+                        <div class="divider-custom divider-light">
+                            <div class="divider-custom-line"></div>
+                            <div class="divider-custom-icon"><i class="fas fa-splotch"></i></div>
+                            <div class="divider-custom-line"></div>
+                        </div>
 
-                    <div class="miniPorfolio__background">
-                        
+                        <div class="heroLinks text-center mt-4 mb-2">
+                            <a class="btn btn-l btn-outline-light" href="assets/resume/MosheGotam.pdf"><i
+                                    class="far fa-file-pdf"></i> Resume - PDF Version</a>
+                            <a class="btn btn-l btn-outline-light" href="assets/resume/MosheGotam.docx"><i
+                                    class="far fa-file-word"></i> Resume - DOC Version</a>
+                            <!--
+                            <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#resume">
+                                <a class="btn btn-l btn-outline-light"><i
+                                        class="far fa-file-pdf"></i> Resume - PDF Version</a>
+                            </div>-->
+                        </div>
                     </div>
                 </div>
+                <br>
             </div>
-        </div>
-    </section>
-    <!-- Blog Section-->
-    <section class="page-section bg-primary text-white mb-0 blogHead" id="blog">
-        <div class="container">
-            <!-- Blog Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-white">Blog</h2>
-            <!-- Icon Divider-->
-            <div class="divider-custom divider-light">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon">
-                    <span class="iconify" data-icon="carbon:blog" data-inline="false"></span></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <p class="text-center">This blog will contain posts mainly regarding data or programming</p>
-            <hr style="border-top: #ffffff dotted 1px;" />
-            <div class="blog__posts">
-                <div class="blog__card">
-                    <div class="card__image__data">
-                        <div class="card__image__bgimage ai" ></div>
-                        <div class="publication__details">
-                            <a href="#" class="publication__author"><i class="fas fa-user"></i> Moshe Gotam</a>
-                            <span class="publication__topic"><i class="fas fa-robot"></i>A.I.</span>
-                        </div>
-                    </div>
-                    <div class="card__post">
-                        <h4 class="card__title"><a href="blog/blog-matrix.html">Confusion Matrix</a></h4>
-                        <h6 class="card__subtitle">M.L</h6>
-                        <p class="post__desc">
-                            A brief explanation about confusion matrix and it's metrics
-                        </p>
-                        <div class="cta">
-                            <a href="blog/blog-matrix.html">Read More &rarr;</a>
-                        </div>
-                    </div>
+        </header>
+        <!-- Portfolio Section-->
+        <section class="page-section portfolio" id="portfolio">
+            <div class="container text-center">
+                <!-- Portfolio Section Heading-->
+                <h2 class="page-section-heading text-uppercase text-secondary mb-0">Portfolio</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-briefcase"></i></i></div>
+                    <div class="divider-custom-line"></div>
                 </div>
-                <div class="blog__card">
-                    <div class="card__image__data">
-                        <div class="card__image__bgimage ai" ></div>
-                        <div class="publication__details">
-                            <a href="#" class="publication__author"><i class="fas fa-user"></i> Moshe Gotam</a>
-                            <span class="publication__topic"><i class="fas fa-robot"></i>A.I.</span>
-                        </div>
-                    </div>
-                    <div class="card__post">
-                        <h4 class="card__title"><a href="blog/blog-MLProcess.html">8 Steps in ML Project</a></h4>
-                        <h6 class="card__subtitle">M.L</h6>
-                        <p class="post__desc">A walkthrough the steps of Machine Learning pipeline
-                        </p>
-                        <div class="cta">
-                            <a href="blog/blog-MLProcess.html">Read More &rarr;</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="blog__card">
-                    <div class="card__image__data">
-                        <div class="card__image__bgimage data" ></div>
-                        <div class="publication__details">
-                            <a href="#" class="publication__author"><i class="fas fa-user"></i> Moshe Gotam</a>
-                            <span class="publication__topic"><i class="fas fa-robot"></i>A.I.</span>
-                        </div>
-                    </div>
-                    <div class="card__post">
-                        <h4 class="card__title"><a href="blog/blog-scatterplot.html">Scatter Plot</a></h4>
-                        <h6 class="card__subtitle">Data</h6>
-                        <p class="post__desc">A breakdown of a useful plot to detect a relationship or correlation
-                        </p>
-                        <div class="cta">
-                            <a href="blog/blog-scatterplot.html">Read More &rarr;</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                    <!--
-                        <div class="card text-dark bg-light mb-3">
-                            <div class="card-header">Scatter Plot</div>
-                            <div class="card-body">
-                                <a href="blog/blog-scatterplot.html"><img class="card-img-top"
-                                        src="assets/img/blog/icons/scatterplot.PNG" style="max-width: 120px"
-                                        alt="Card image cap"></a>
-                                <br>
-                                <p class="card-text">A breakdown of a useful plot to detect a relationship or
-                                    correlation
-                                    between
-                                    the two variables exists </>
-                            </div>
-                        </div> 
-                    </div>-->
-        </div>
-    </section>
-    <!-- About Section-->
-    <section class="page-section" id="about">
-        <div class="container">
-            <!-- About Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase">About Me</h2>
-            <!-- Icon Divider-->
-            <div class="divider-custom divider">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><img class="masthead-avatar" src="assets/img/me.gif" alt="" />
-                </div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <!-- About Section Content-->
-            <hr style="border-top: #000000 dotted 1px;" />
-            <div class="about-me-section">
-                <p style="text-align:center">I am a Computer Science student with interests from data to programming to
-                    everything in between. I am very curious regarding fields heavily impacted by data. In addition to my degree i'm taking online
-                    courses to expand my knowledge.
-                </p>
-                <p style="text-align:center">When i'm not learning or working, I spend my free time watching various
-                    sports. As a data enthusiest, I have displayed my interest in sports in the pie chart below:</p>
-                <img class="img-sport" src="assets/img/about_me_sport.jpg" />
-                <p style="text-align:center">As you can see, I mostly watch basketball. Whether it's Euroleage, NBA or
-                    even the Italian second league, if it's a good game, I will want to watch it.</p>            </div>
-        </div>
-    </section>
-    <!-- Contact Section-->
-    <section class="page-section bg-primary text-white mb-0 contactHead" id="contact">
-        <div class="container d-flex align-items-center flex-column">
-            <!-- Contact Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-white mb-0">Get in touch</h2>
-            <!-- Icon Divider-->
-            <div class="divider-custom divider-light">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon">
-                    <span class="iconify" data-icon="ic:round-contact-phone" data-inline="false"></span></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <!-- Contact Section Form-->
-            <p class="masthead-subheading mb-0 text-center">Want to do a project togther? Have a question you want
-                to ask? Feel free to contact me in any that platform you want!
-                <br><br>
-                <div class="col-lg-4 mb-5 mb-lg-0 d-flex align-items-center flex-column">
-                    <h4 class="text-uppercase mb-4">I'm also on:</h4>
-                    <div>
-                        <a class="btn btn-outline-light btn-social mx-1" target="_blank"
-                            href="mailto:mgotam@gmail.com"><i class="fas fa-mail-bulk"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" target="_blank"
-                            href="https://www.facebook.com/mgotam"><i class="fab fa-fw fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" target="_blank"
-                            href="https://www.linkedin.com/in/moshe-gotam/"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" target="_blank"
-                            href="https://github.com/MosheG23"><i class="fab fa-github"></i></a>
-                    </div>
-                    <h4 class="text-uppercase mt-4">Spread the word!</h4>
-                    <!--Linkedin-->
-                    <div>
-                        <a class="btn btn-outline-light btn-social mx-1" target="_blank"
-                            href="https://www.linkedin.com/sharing/share-offsite/?url=https://mosheg23.github.io"><i
-                                class="fab fa-fw fa-linkedin-in"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" target="_blank"
-                            href="http://www.facebook.com/sharer.php?u=https://mosheg23.github.io"><i
-                                class="fab fa-fw fa-facebook-f"></i></a>
-                    </div>
-                </div>
-        </div>
-    </section>
-    <!-- Copyright Section-->
-    <section class="copyright py-4 text-center text-white">
-        <div class="container"><small>inspierd by <a href="https://startbootstrap.com/themes/freelancer/"
-                    target="_blank">freelancer from StartBootStrap</a>
-                <br>Moshe Gotam • 2020-<b>Present</b></small></div>
-    </section>
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
-    <div class="scroll-to-top d-lg-none position-fixed">
-        <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i
-                class="fa fa-chevron-up"></i></a>
-    </div>
-    <!--Resume Modal-->
-    <div class="portfolio-modal modal fade" id="resume" tabindex="-1" role="dialog"
-        aria-labelledby="portfolioModal7Label" aria-hidden="true">
-        <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                </button>
-                <div class="modal-body text-center">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">My Resume</h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom divider-dark">
-                                    <div class="divider-custom-icon">
-                                        <i class="fas fa-file-alt"></i>
-                                    </div>
+                <hr class="hr-light" />
+                <!-- Portfolio Grid Items-->
+                <h3>Projects</h3>
+                <div id="Portfolio" class="mb-5">
+                    <ul class="flex-container">
+                        <li class="flex-item dark ">
+                            <!-- Portfolio Item 4
+                            <div class="col-md-6 col-lg-4 mb-5">-->
+                            <h5>ELECTIONS OF ISRAEL 21/22/23</h5>
+                            <div class="portfolio-item mx-auto" data-toggle="modal" onclick="showSlidesProject('Project7')"
+                                data-target="#portfolioModal7">
+                                <div
+                                    class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                    <div class="portfolio-item-caption-content text-center text-uppercase text-white"><i
+                                            class="fas fa-plus fa-3x"></i><br>Read More</div>
                                 </div>
-                                <a class="btn btn-dark" href="project/elections.html">
-                                    PDF Version</a>
-                                <a class="btn btn-dark" href="project/elections.html">
-                                    DOC Version</a>
-                                <!-- Portfolio Modal - Text-->
-                                <object data="assets/resume/MosheGotam.pdf#view=FitH" type="application/pdf"
-                                    width="100%" height="100%">
-                                    <p>This browser does not support PDFs. Please
-                                        download the PDF/DOC to view it.
-                                </object>
-                                <!-- Portfolio Modal - Image-->
-                                <!-- Slideshow container -->
+                                <img class="img-fluid" src="assets/img/portfolio/gif/project7.gif" alt="java" />
+                            </div>
+                        </li>
+                        <li class="flex-item dark ">
+                            <!-- Portfolio Item 4
+                            <div class="col-md-6 col-lg-4 mb-5">-->
+                            <h5>COVID-19 DASHBOARD</h5>
+                            <div class="portfolio-item mx-auto" data-toggle="modal"
+                                data-target="#portfolioModal10">
+                                <div
+                                    class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                    <div class="portfolio-item-caption-content text-center text-uppercase text-white">
+                                        <i class="fas fa-plus fa-3x"></i><br>Read More</div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/gif/project10.gif" alt="java" />
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <h3 class="m-5">Mini Projects</h3>
+                <div id="miniPortfolio">
+                    <div id="miniProject4" class="miniProject">
+                        <div class="front">
+                            <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal11">
+                                <div
+                                    class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                    <div class="portfolio-item-caption-content text-center text-uppercase text-white"><i
+                                            class="fas fa-plus fa-3x"></i><br>Read More</div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/Project3.png" alt="java" />
+                            </div>
+                            <h5 class="front__name">Rock Scissors Paper</h5>
+                            <div class="front__links">
+                                <a href="https://desolate-badlands-33075.herokuapp.com/" target="_blank">
+                                <div class="heroSkills flex-item" data-tooltip="Demo">
+                                <i class="far fa-play-circle"></i></div></a>
+                                <a href="./project/rock-scissors-paper/index.htm" target="_blank">
+                                <div class="heroSkills flex-item" data-tooltip="Game Site">
+                                <i class="fas fa-sitemap"></i></div></a>
+                                <a href="https://github.com/MosheG23/react-rock-scissors-paper" target="_blank">
+                                <div class="heroSkills flex-item" data-tooltip="Github">
+                                <i class="fab fa-github"></i></div></a>
+                            </div>
+                            <div class="front__languages">
+                                <div class="heroSkills flex-item" data-tooltip="React">
+                                    <span class="iconify" data-icon="cib:react" data-inline="false"></span>
+                                </div>
+                                <div class="heroSkills flex-item" data-tooltip="JavaScript"><i class="fab fa-js"></i></div>
+                            </div>
+                            
+                        </div>
+                        <div class="miniPorfolio__background">
+                            
+                        </div>
+                    </div>
+                    <div id="miniProject1" class="miniProject">
+                        <div class="front">
+                            <div class="portfolio-item mx-auto" data-toggle="modal"
+                                data-target="#portfolioModal6">
+                                <div
+                                    class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                    <div class="portfolio-item-caption-content text-center text-uppercase text-white"><i
+                                            class="fas fa-plus fa-3x"></i><br>Read More</div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/Project8.PNG" alt="java" />
+                            </div>
+                            <h5 class="front__name">Deni Avdija</h5>
+                            <div class="front__links">
+                                <a href="./project/deni/main.htm" target="_blank">
+                                <div class="heroSkills flex-item" data-tooltip="Site">
+                                <i class="far fa-play-circle"></i></div></a>
+                            </div>
+                            <div class="front__languages">
+                                <div class="heroSkills flex-item" data-tooltip="HTML"><i class="fab fa-html5"></i></div>
+                                <div class="heroSkills flex-item" data-tooltip="CSS"><i class="fab fa-css3-alt"></i></div>
                             </div>
                         </div>
+                        <div class="miniPorfolio__background">
+                            
+                        </div>
+                    </div>
+                    <div id="miniProject2" class="miniProject">
+                        <div class="front">
+                            <div class="portfolio-item mx-auto" data-toggle="modal" onclick="showSlidesProject('Project1')"
+                                data-target="#portfolioModal1">
+                                <div
+                                    class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                    <div class="portfolio-item-caption-content text-center text-uppercase text-white"><i
+                                            class="fas fa-plus fa-3x"></i><br>Read More</div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/Project1.PNG" alt="java" />
+                            </div>
+                            <h5 class="front__name">BattleShips</h5>
+                            <div class="front__links">
+                                <a href="https://github.com/MosheG23/battleship" target="_blank">
+                                <div class="heroSkills flex-item" data-tooltip="Github">
+                                <i class="fab fa-github"></i></div></a>
+                            </div>
+                            <div class="front__languages">
+                                <div class="heroSkills flex-item" data-tooltip="Python"><i class="fab fa-python"></i></div>
+                            </div>
+                        </div>
+                        <div class="miniPorfolio__background">
+                            
+                        </div>
+                    </div>
+                    <div id="miniProject3" class="miniProject">
+                        <div class="front">
+                            <div class="portfolio-item mx-auto" data-toggle="modal" onclick="showSlidesProject('Project2')"
+                                data-target="#portfolioModal2">
+                                <div
+                                    class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                    <div class="portfolio-item-caption-content text-center text-uppercase text-white"><i
+                                            class="fas fa-plus fa-3x"></i><br>Read More</div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/Project2.PNG" alt="java" />
+                            </div>
+                            <h5 class="front__name">NCAA To NBA</h5>
+                            <div class="front__links">
+                                <a href="https://github.com/MosheG23/NCAAToNBA-WebScraping" target="_blank">
+                                <div class="heroSkills flex-item" data-tooltip="Github">
+                                <i class="fab fa-github"></i></div></a>
+                            </div>
+                            <div class="front__languages">
+                                <div class="heroSkills flex-item" data-tooltip="Python"><i class="fab fa-python"></i></div>
+                            </div>
+                        </div>
+                        <div class="miniPorfolio__background">
+                            
+                        </div>
+                    </div>
+                    <div id="miniProject6" class="miniProject">
+                        <div class="front">
+                            <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal9">
+                                <div
+                                    class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                    <div class="portfolio-item-caption-content text-center text-uppercase text-white"><i
+                                            class="fas fa-plus fa-3x"></i><br>Read More</div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/Project9.PNG" alt="java" />
+                            </div>
+                            <h5 class="front__name">Quiz Game</h5>
+                            <div class="front__links">
+                                <a href="./project/quiz-game/index.htm" target="_blank">
+                                <div class="heroSkills flex-item" data-tooltip="Game Link">
+                                <i class="far fa-play-circle"></i></div></a>
+                            </div>
+                            <div class="front__languages">
+                                <div class="heroSkills flex-item" data-tooltip="JavaScript"><i class="fab fa-js"></i></div>
+                            </div>
+                        </div>
+
+                        <div class="miniPorfolio__background">
+                            
+                        </div>
+                    </div>
+                    <div id="miniProject5" class="miniProject">
+                        <div class="front">
+                            <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
+                                <div
+                                    class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                    <div class="portfolio-item-caption-content text-center text-uppercase text-white"><i
+                                            class="fas fa-plus fa-3x"></i><br>Read More</div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/Project5.PNG" alt="java" />
+                            </div>
+                            <h5 class="front__name">EZShift</h5>
+                            <div class="front__links">
+                                <a href="https://github.com/MosheG23/TeamManger" target="_blank">
+                                <div class="heroSkills flex-item" data-tooltip="Github">
+                                <i class="fab fa-github"></i></div></a>
+                            </div>
+                            <div class="front__languages">
+                                <div class="heroSkills flex-item" data-tooltip="Java"><i class="fab fa-java"></i></div>
+                            </div>
+                        </div>
+                        <div class="miniPorfolio__background">
+                            
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- Portfolio Modals-->
-    <!-- Portfolio Modal 1-->
-    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog"
-        aria-labelledby="portfolioModal7Label" aria-hidden="true">
-        <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                </button>
-                <div class="modal-body text-center">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Elections of Israel
-                                    21/22/23</h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom divider-dark">
-                                    <div class="divider-custom-icon">
-                                        <span class="iconify" data-icon="logos:python" data-inline="false"></span>
-                                        | <span class="iconify" data-icon="logos:elasticsearch"
-                                            data-inline="false"></span>
-                                        | <span class="iconify" data-icon="logos:selenium" data-inline="false"></span>
-                                    </div>
-                                </div>
-                                <a class="btn btn-dark" href="project/elections.html">
-                                    Project Page</a>
-                                <!-- Portfolio Modal - Text-->
-                                <p class="mb-5">Building a machine learning model to predict user/comment
-                                    credibility.<br>Using a crawler (with selenium) for data mining posts and comments.
-                                    Analyse the data with ElasticSearch and python using machine learning
-                                    pipeline.<br>Still W.I.P on high score for bots prediction.
-                                </p>
-                                <!-- Portfolio Modal - Image-->
-                                <!-- Slideshow container -->
-                                <div id="Project7" class="slideshow-container">
-
-                                    <!-- Full-width images with number and caption text -->
-                                    <div class="mySlides fade-slideshow">
-                                        <div class="numbertext text-black">1 / 3</div>
-                                        <img src="assets/img/portfolio/Project7.PNG" style="width:100%">
-                                        <div class="text text-black">ElasticSearch\Kibana</div>
-                                    </div>
-
-                                    <div class="mySlides fade-slideshow">
-                                        <div class="numbertext">2 / 3</div>
-                                        <img src="assets/img/portfolio/Project72.PNG" style="width:100%">
-                                        <div class="text">Data Visualization 1</div>
-                                    </div>
-                                    <div class="mySlides fade-slideshow">
-                                        <div class="numbertext text-black">3 / 3</div>
-                                        <img src="assets/img/portfolio/Project73.PNG" style="width:100%">
-                                        <div class="text text-black">Data Visualization 2</div>
-                                    </div>
-                                    <!-- Next and previous buttons -->
-                                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                                    <br>
-
-                                    <!-- The dots/circles -->
-                                    <div style="text-align:center">
-                                        <span class="dot" onclick="currentSlide(1)"></span>
-                                        <span class="dot" onclick="currentSlide(2)"></span>
-                                        <span class="dot" onclick="currentSlide(3)"></span>
-                                    </div>
-                                </div>
+        </section>
+        <!-- Blog Section-->
+        <section class="page-section bg-primary text-white mb-0 blogHead" id="blog">
+            <div class="container">
+                <!-- Blog Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-white">Blog</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon">
+                        <span class="iconify" data-icon="carbon:blog" data-inline="false"></span></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <p class="text-center">This blog will contain posts mainly regarding data or programming</p>
+                <hr style="border-top: #ffffff dotted 1px;" />
+                <div class="blog__posts">
+                    <div class="blog__card">
+                        <div class="card__image__data">
+                            <div class="card__image__bgimage ai" ></div>
+                            <div class="publication__details">
+                                <a href="#about" class="publication__author js-scroll-trigger"><i class="fas fa-user"></i> Moshe Gotam</a>
+                                <span class="publication__topic"><i class="fas fa-robot"></i>A.I.</span>
+                            </div>
+                        </div>
+                        <div class="card__post">
+                            <h4 class="card__title"><a href="blog/blog-matrix.html">Confusion Matrix</a></h4>
+                            <h6 class="card__subtitle">M.L</h6>
+                            <p class="post__desc">
+                                A brief explanation about confusion matrix and it's metrics
+                            </p>
+                            <div class="cta">
+                                <a href="blog/blog-matrix.html">Read More &rarr;</a>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Portfolio Modal 2-->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog"
-        aria-labelledby="portfolioModal1Label" aria-hidden="true">
-        <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                </button>
-                <div class="modal-body text-center">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">BattleShips</h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-icon"><span class="iconify" data-icon="logos:python"
-                                            data-inline="false"></span></div>
-                                </div>
-                                <a class="btn btn-dark" href="https://github.com/MosheG23/battleship" target="_blank">
-                                    <i class="fab fa-github"></i> Source Code</a>
-                                <!-- Portfolio Modal - Text-->
-                                <p class="mb-5">The famous game. <br>
-                                    Used PyGame to implement the game. The code is based on Object-Oriented Programming.
-                                </p>
-                                <!-- Portfolio Modal - Image-->
-                                <!-- Slideshow container -->
-                                <div id="Project1" class="slideshow-container">
-
-                                    <!-- Full-width images with number and caption text -->
-                                    <div class="mySlides fade-slideshow">
-                                        <div class="numbertext text-black">1 / 2</div>
-                                        <img src="assets/img/portfolio/Project1.PNG" style="width:100%">
-                                        <div class="text text-black">Start Screen</div>
-                                    </div>
-
-                                    <div class="mySlides fade-slideshow">
-                                        <div class="numbertext">1 / 2</div>
-                                        <img src="assets/img/portfolio/Project12.PNG" style="width:100%">
-                                        <div class="text">In-Game</div>
-                                    </div>
-                                    <!-- Next and previous buttons -->
-                                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                                    <br>
-
-                                    <!-- The dots/circles -->
-                                    <div style="text-align:center">
-                                        <span class="dot" onclick="currentSlide(1)"></span>
-                                        <span class="dot" onclick="currentSlide(2)"></span>
-                                    </div>
-                                </div>
+                    <div class="blog__card">
+                        <div class="card__image__data">
+                            <div class="card__image__bgimage ai" ></div>
+                            <div class="publication__details">
+                                <a href="#about" class="publication__author js-scroll-trigger"><i class="fas fa-user"></i> Moshe Gotam</a>
+                                <span class="publication__topic"><i class="fas fa-robot"></i>A.I.</span>
+                            </div>
+                        </div>
+                        <div class="card__post">
+                            <h4 class="card__title"><a href="blog/blog-MLProcess.html">8 Steps in ML Project</a></h4>
+                            <h6 class="card__subtitle">M.L</h6>
+                            <p class="post__desc">A walkthrough the steps of Machine Learning pipeline
+                            </p>
+                            <div class="cta">
+                                <a href="blog/blog-MLProcess.html">Read More &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog__card">
+                        <div class="card__image__data">
+                            <div class="card__image__bgimage data" ></div>
+                            <div class="publication__details">
+                                <a href="#about" class="publication__author js-scroll-trigger"><i class="fas fa-user"></i> Moshe Gotam</a>
+                                <span class="publication__topic"><i class="fas fa-robot"></i>A.I.</span>
+                            </div>
+                        </div>
+                        <div class="card__post">
+                            <h4 class="card__title"><a href="blog/blog-scatterplot.html">Scatter Plot</a></h4>
+                            <h6 class="card__subtitle">Data</h6>
+                            <p class="post__desc">A breakdown of a useful plot to detect a relationship or correlation
+                            </p>
+                            <div class="cta">
+                                <a href="blog/blog-scatterplot.html">Read More &rarr;</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- Portfolio Modal 3-->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog"
-        aria-labelledby="portfolioModal2Label" aria-hidden="true">
-        <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                </button>
-                <div class="modal-body text-center">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">NCAA To NBA</h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-icon"><span class="iconify" data-icon="logos:python"
-                                            data-inline="false"></span></div>
-                                </div>
-                                <a class="btn btn-dark" href="https://github.com/MosheG23/NCAAToNBA-WebScraping"
-                                    target="_blank">
-                                    <i class="fab fa-github"></i> Source Code</a>
-                                <!-- Portfolio Modal - Text-->
-                                <p class="mb-3">A machine learning project to try to predict the NBA 2019 draft.
-                                    Using a database of the NBA players (and their college career),
-                                    to predict player success using a machine learning algorithm.</p>
-                                <p class="mb-5">Created the database using data mining -
-                                    BeautifulSoup.
-                                    Preform Cluster Analysis to check data credibility - KMeans, tried few machine
-                                    learning algorithm to find the best suiter for the data (Unsupervised Learning).</p>
-                                <!-- Portfolio Modal - Image-->
-                                <!-- Slideshow container -->
-                                <div id="Project2" class="slideshow-container">
-
-                                    <!-- Full-width images with number and caption text -->
-                                    <div class="mySlides fade-slideshow">
-                                        <div class="numbertext text-black">1 / 3</div>
-                                        <img src="assets/img/portfolio/Project2.PNG" style="width:100%">
-                                        <div class="text text-black">Data Visualization</div>
-                                    </div>
-
-                                    <div class="mySlides fade-slideshow">
-                                        <div class="numbertext">2 / 3</div>
-                                        <img src="assets/img/portfolio/Project22.PNG" style="width:100%">
-                                        <div class="text">Clusters</div>
-                                    </div>
-                                    <div class="mySlides fade-slideshow">
-                                        <div class="numbertext text-black">3 / 3</div>
-                                        <img src="assets/img/portfolio/Project23.PNG" style="width:100%">
-                                        <div class="text text-black">Database Overview</div>
-                                    </div>
-                                    <!-- Next and previous buttons -->
-                                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                                    <br>
-
-                                    <!-- The dots/circles -->
-                                    <div style="text-align:center">
-                                        <span class="dot" onclick="currentSlide(1)"></span>
-                                        <span class="dot" onclick="currentSlide(2)"></span>
-                                        <span class="dot" onclick="currentSlide(3)"></span>
-                                    </div>
-                                </div>
-                            </div>
+        </section>
+        <!-- About Section-->
+        <section class="page-section" id="about">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase">About Me</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><img class="masthead-avatar" src="assets/img/me.gif" alt="" />
+                    </div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- About Section Content-->
+                <hr style="border-top: #000000 dotted 1px;" />
+                <div class="about-me-section">
+                    <p style="text-align:center">I am a Computer Science student with interests from data to programming to
+                        everything in between. I am very curious regarding fields heavily impacted by data. In addition to my degree i'm taking online
+                        courses to expand my knowledge.
+                    </p>
+                    <p style="text-align:center">When i'm not learning or working, I spend my free time watching various
+                        sports. As a data enthusiest, I have displayed my interest in sports in the pie chart below:</p>
+                    <img class="img-sport" src="assets/img/about_me_sport.jpg" />
+                    <p style="text-align:center">As you can see, I mostly watch basketball. Whether it's Euroleage, NBA or
+                        even the Italian second league, if it's a good game, I will want to watch it.</p>            </div>
+            </div>
+        </section>
+        <!-- Contact Section-->
+        <section class="page-section bg-primary text-white mb-0 contactHead" id="contact">
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Contact Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-white mb-0">Get in touch</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon">
+                        <span class="iconify" data-icon="ic:round-contact-phone" data-inline="false"></span></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Contact Section Form-->
+                <p class="masthead-subheading mb-0 text-center">Want to do a project togther? Have a question you want
+                    to ask? Feel free to contact me in any that platform you want!
+                    <br><br>
+                    <div class="col-lg-4 mb-5 mb-lg-0 d-flex align-items-center flex-column">
+                        <h4 class="text-uppercase mb-4">I'm also on:</h4>
+                        <div>
+                            <a class="btn btn-outline-light btn-social mx-1" target="_blank"
+                                href="mailto:mgotam@gmail.com"><i class="fas fa-mail-bulk"></i></a>
+                            <a class="btn btn-outline-light btn-social mx-1" target="_blank"
+                                href="https://www.facebook.com/mgotam"><i class="fab fa-fw fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social mx-1" target="_blank"
+                                href="https://www.linkedin.com/in/moshe-gotam/"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-light btn-social mx-1" target="_blank"
+                                href="https://github.com/MosheG23"><i class="fab fa-github"></i></a>
+                        </div>
+                        <h4 class="text-uppercase mt-4">Spread the word!</h4>
+                        <!--Linkedin-->
+                        <div>
+                            <a class="btn btn-outline-light btn-social mx-1" target="_blank"
+                                href="https://www.linkedin.com/sharing/share-offsite/?url=https://mosheg23.github.io"><i
+                                    class="fab fa-fw fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-light btn-social mx-1" target="_blank"
+                                href="http://www.facebook.com/sharer.php?u=https://mosheg23.github.io"><i
+                                    class="fab fa-fw fa-facebook-f"></i></a>
                         </div>
                     </div>
-                </div>
             </div>
+        </section>
+        <!-- Copyright Section-->
+        <section class="copyright py-4 text-center text-white">
+            <div class="container"><small>inspierd by <a href="https://startbootstrap.com/themes/freelancer/"
+                        target="_blank">freelancer from StartBootStrap</a>
+                    <br>Moshe Gotam • 2020-<b>Present</b></small></div>
+        </section>
+        <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
+        <div class="scroll-to-top d-lg-none position-fixed">
+            <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i
+                    class="fa fa-chevron-up"></i></a>
         </div>
-    </div>
-    </div>
-    <!-- Portfolio Modal 4-->
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog"
-        aria-labelledby="portfolioModal5Label" aria-hidden="true">
-        <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                </button>
-                <div class="modal-body text-center">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">EZShift</h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-icon"><span class="iconify" data-icon="logos:java"
-                                            data-inline="false"></span> |
-                                        <span class="iconify" data-icon="logos:sqlite" data-inline="false"></span>
+        <!--Resume Modal-->
+        <div class="portfolio-modal modal fade" id="resume" tabindex="-1" role="dialog"
+            aria-labelledby="portfolioModal7Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">My Resume</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom divider-dark">
+                                        <div class="divider-custom-icon">
+                                            <i class="fas fa-file-alt"></i>
+                                        </div>
                                     </div>
+                                    <a class="btn btn-dark" href="project/elections.html">
+                                        PDF Version</a>
+                                    <a class="btn btn-dark" href="project/elections.html">
+                                        DOC Version</a>
+                                    <!-- Portfolio Modal - Text-->
+                                    <object data="assets/resume/MosheGotam.pdf#view=FitH" type="application/pdf"
+                                        width="100%" height="100%">
+                                        <p>This browser does not support PDFs. Please
+                                            download the PDF/DOC to view it.
+                                    </object>
+                                    <!-- Portfolio Modal - Image-->
+                                    <!-- Slideshow container -->
                                 </div>
-                                <a class="btn btn-dark" href="https://github.com/MosheG23/TeamManger" target="_blank">
-                                    <i class="fab fa-github"></i> Source Code</a>
-                                <!-- Portfolio Modal - Text-->
-                                <p class="mb-5">An app for managing a compney - has unique users for each
-                                    deparment<br>An Object-Oriented Programming project - mainly using polymorphism,
-                                    overloading and inheritance.<br>Used SQLite to manage the DB, making the application
-                                    suitable to work offline.</p>
-                                <!-- Portfolio Modal - Image-->
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Project5.PNG" alt="" />
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div><!-- Portfolio Modal 6-->
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog"
-        aria-labelledby="portfolioModal6Label" aria-hidden="true">
-        <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                </button>
-                <div class="modal-body text-center">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">DANI AVDIJA</h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-icon">
-                                    <span class="iconify" data-icon="vscode-icons:file-type-html" data-inline="false"></span> |
-                                        <span class="iconify" data-icon="vscode-icons:file-type-css" data-inline="false"></span>
+        <!-- Portfolio Modals-->
+        <!-- Portfolio Modal 1-->
+        <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog"
+            aria-labelledby="portfolioModal7Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Elections of Israel
+                                        21/22/23</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom divider-dark">
+                                        <div class="divider-custom-icon">
+                                            <span class="iconify" data-icon="logos:python" data-inline="false"></span>
+                                            | <span class="iconify" data-icon="logos:elasticsearch"
+                                                data-inline="false"></span>
+                                            | <span class="iconify" data-icon="logos:selenium" data-inline="false"></span>
+                                        </div>
+                                    </div>
+                                    <a class="btn btn-dark" href="project/elections.html">
+                                        Project Page</a>
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">Building a machine learning model to predict user/comment
+                                        credibility.<br>Using a crawler (with selenium) for data mining posts and comments.
+                                        Analyse the data with ElasticSearch and python using machine learning
+                                        pipeline.<br>Still W.I.P on high score for bots prediction.
+                                    </p>
+                                    <!-- Portfolio Modal - Image-->
+                                    <!-- Slideshow container -->
+                                    <div id="Project7" class="slideshow-container">
+
+                                        <!-- Full-width images with number and caption text -->
+                                        <div class="mySlides fade-slideshow">
+                                            <div class="numbertext text-black">1 / 3</div>
+                                            <img src="assets/img/portfolio/Project7.PNG" style="width:100%">
+                                            <div class="text text-black">ElasticSearch\Kibana</div>
+                                        </div>
+
+                                        <div class="mySlides fade-slideshow">
+                                            <div class="numbertext">2 / 3</div>
+                                            <img src="assets/img/portfolio/Project72.PNG" style="width:100%">
+                                            <div class="text">Data Visualization 1</div>
+                                        </div>
+                                        <div class="mySlides fade-slideshow">
+                                            <div class="numbertext text-black">3 / 3</div>
+                                            <img src="assets/img/portfolio/Project73.PNG" style="width:100%">
+                                            <div class="text text-black">Data Visualization 2</div>
+                                        </div>
+                                        <!-- Next and previous buttons -->
+                                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                        <br>
+
+                                        <!-- The dots/circles -->
+                                        <div style="text-align:center">
+                                            <span class="dot" onclick="currentSlide(1)"></span>
+                                            <span class="dot" onclick="currentSlide(2)"></span>
+                                            <span class="dot" onclick="currentSlide(3)"></span>
+                                        </div>
                                     </div>
                                 </div>
-                                <a class="btn btn-dark" href="./project/deni/main.htm" target="_blank">
-                                    <i class="far fa-file"></i> Landing Page</a>
-                                <!-- Portfolio Modal - Text-->
-                                <p class="mb-1">A landing page about Deni Avidja using only html and css.</p>
-                                <p class="mb-3">A responsive page - from moblie screen size (320px) to laptop and more.</p>
-                                <!-- Portfolio Modal - Image-->
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Project8.PNG" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 2-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog"
+            aria-labelledby="portfolioModal1Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">BattleShips</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-icon"><span class="iconify" data-icon="logos:python"
+                                                data-inline="false"></span></div>
+                                    </div>
+                                    <a class="btn btn-dark" href="https://github.com/MosheG23/battleship" target="_blank">
+                                        <i class="fab fa-github"></i> Source Code</a>
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">The famous game. <br>
+                                        Used PyGame to implement the game. The code is based on Object-Oriented Programming.
+                                    </p>
+                                    <!-- Portfolio Modal - Image-->
+                                    <!-- Slideshow container -->
+                                    <div id="Project1" class="slideshow-container">
+
+                                        <!-- Full-width images with number and caption text -->
+                                        <div class="mySlides fade-slideshow">
+                                            <div class="numbertext text-black">1 / 2</div>
+                                            <img src="assets/img/portfolio/Project1.PNG" style="width:100%">
+                                            <div class="text text-black">Start Screen</div>
+                                        </div>
+
+                                        <div class="mySlides fade-slideshow">
+                                            <div class="numbertext">1 / 2</div>
+                                            <img src="assets/img/portfolio/Project12.PNG" style="width:100%">
+                                            <div class="text">In-Game</div>
+                                        </div>
+                                        <!-- Next and previous buttons -->
+                                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                        <br>
+
+                                        <!-- The dots/circles -->
+                                        <div style="text-align:center">
+                                            <span class="dot" onclick="currentSlide(1)"></span>
+                                            <span class="dot" onclick="currentSlide(2)"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 3-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog"
+            aria-labelledby="portfolioModal2Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">NCAA To NBA</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-icon"><span class="iconify" data-icon="logos:python"
+                                                data-inline="false"></span></div>
+                                    </div>
+                                    <a class="btn btn-dark" href="https://github.com/MosheG23/NCAAToNBA-WebScraping"
+                                        target="_blank">
+                                        <i class="fab fa-github"></i> Source Code</a>
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-3">A machine learning project to try to predict the NBA 2019 draft.
+                                        Using a database of the NBA players (and their college career),
+                                        to predict player success using a machine learning algorithm.</p>
+                                    <p class="mb-5">Created the database using data mining -
+                                        BeautifulSoup.
+                                        Preform Cluster Analysis to check data credibility - KMeans, tried few machine
+                                        learning algorithm to find the best suiter for the data (Unsupervised Learning).</p>
+                                    <!-- Portfolio Modal - Image-->
+                                    <!-- Slideshow container -->
+                                    <div id="Project2" class="slideshow-container">
+
+                                        <!-- Full-width images with number and caption text -->
+                                        <div class="mySlides fade-slideshow">
+                                            <div class="numbertext text-black">1 / 3</div>
+                                            <img src="assets/img/portfolio/Project2.PNG" style="width:100%">
+                                            <div class="text text-black">Data Visualization</div>
+                                        </div>
+
+                                        <div class="mySlides fade-slideshow">
+                                            <div class="numbertext">2 / 3</div>
+                                            <img src="assets/img/portfolio/Project22.PNG" style="width:100%">
+                                            <div class="text">Clusters</div>
+                                        </div>
+                                        <div class="mySlides fade-slideshow">
+                                            <div class="numbertext text-black">3 / 3</div>
+                                            <img src="assets/img/portfolio/Project23.PNG" style="width:100%">
+                                            <div class="text text-black">Database Overview</div>
+                                        </div>
+                                        <!-- Next and previous buttons -->
+                                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                        <br>
+
+                                        <!-- The dots/circles -->
+                                        <div style="text-align:center">
+                                            <span class="dot" onclick="currentSlide(1)"></span>
+                                            <span class="dot" onclick="currentSlide(2)"></span>
+                                            <span class="dot" onclick="currentSlide(3)"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- Portfolio Modal 4-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog"
+            aria-labelledby="portfolioModal5Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">EZShift</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-icon"><span class="iconify" data-icon="logos:java"
+                                                data-inline="false"></span> |
+                                            <span class="iconify" data-icon="logos:sqlite" data-inline="false"></span>
+                                        </div>
+                                    </div>
+                                    <a class="btn btn-dark" href="https://github.com/MosheG23/TeamManger" target="_blank">
+                                        <i class="fab fa-github"></i> Source Code</a>
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">An app for managing a compney - has unique users for each
+                                        deparment<br>An Object-Oriented Programming project - mainly using polymorphism,
+                                        overloading and inheritance.<br>Used SQLite to manage the DB, making the application
+                                        suitable to work offline.</p>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Project5.PNG" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- Portfolio Modal 6-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog"
+            aria-labelledby="portfolioModal6Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">DANI AVDIJA</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-icon">
+                                        <span class="iconify" data-icon="vscode-icons:file-type-html" data-inline="false"></span> |
+                                            <span class="iconify" data-icon="vscode-icons:file-type-css" data-inline="false"></span>
+                                        </div>
+                                    </div>
+                                    <a class="btn btn-dark" href="./project/deni/main.htm" target="_blank">
+                                        <i class="far fa-file"></i> Landing Page</a>
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-1">A landing page about Deni Avidja using only html and css.</p>
+                                    <p class="mb-3">A responsive page - build in a mobile first approach. A sleek one page site about
+                                    the next Israeli NBA player.</p>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Project8.PNG" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 6-->
+        <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog"
+            aria-labelledby="portfolioModal9Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Quiz Game</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-icon">
+                                            <span class="iconify" data-icon="logos:javascript" data-inline="false"></span>
+                                        </div>
+                                    </div>
+                                    <a class="btn btn-dark" href="./project/quiz-game/index.htm" target="_blank">
+                                        <i class="fas fa-laptop"></i> Game Link</a>
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-1">A quiz game about javascript in javascript. <br />Using various DOM manipulation to render the game.</p>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Project9.PNG" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 6-->
+        <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog"
+            aria-labelledby="portfolioModal10Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Covid-19 Dashboard</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-icon">
+                                            <span class="iconify" data-icon="logos:javascript" data-inline="false"></span> 
+                                            | <span class="iconify" data-icon="vscode-icons:file-type-reactts" data-inline="false"></span>
+                                        </div>
+                                    </div>
+                                    <div class="btn btn-dark">
+                                        <i class="fas fa-laptop"></i> <span class="iconify" data-icon="emojione-monotone:construction-worker" data-inline="false"></span> W.I.P</div>
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-1">A dynamic dashboard to track the coronavirus outbreak.
+                                    The report is constantly updated from data taken in JSON by API request.</p>
+                                    <p class="mb-1">The dashboard takes full use of the advadages of react to build dynamic components based on user request
+                                    (the dashboard is in hebrew)</p>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Project10.PNG" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 6-->
+        <div class="portfolio-modal modal fade" id="portfolioModal11" tabindex="-1" role="dialog"
+            aria-labelledby="portfolioModal10Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Rock Scissors Paper</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-icon">
+                                            <span class="iconify" data-icon="logos:javascript" data-inline="false"></span> 
+                                            | <span class="iconify" data-icon="vscode-icons:file-type-reactts" data-inline="false"></span>
+                                        </div>
+                                    </div>
+                                    <a href="https://desolate-badlands-33075.herokuapp.com/" target="_blank" ><div class="btn btn-dark">
+                                        <i class="fas fa-laptop"></i>
+                                        </span>Demo</div></a>
+                                    <a href="https://github.com/MosheG23/react-rock-scissors-paper" target="_blank" ><div class="btn btn-dark">
+                                        <i class="fab fa-github"></i> Repository</div></a>
+                                    <a href="./project/rock-scissors-paper/index.htm" target="_blank" ><div class="btn btn-dark">
+                                        <i class="fas fa-sitemap"></i></i> Site</div></a>
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-1">ReactJS Project - chose React as a platform to manage game state and render the board each play.</p>
+                                    <p class="mb-4">Used React Route (and Switch) to handle website's navigation, has additional feature to create a 
+                                    custom game - choose the game rounds and starting score with a form validation.</p>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Project3.PNG" alt="" />
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -730,76 +962,8 @@
             </div>
         </div>
     </div>
-    <!-- Portfolio Modal 6-->
-    <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog"
-        aria-labelledby="portfolioModal9Label" aria-hidden="true">
-        <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                </button>
-                <div class="modal-body text-center">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Quiz Game</h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-icon">
-                                        <span class="iconify" data-icon="logos:javascript" data-inline="false"></span>
-                                    </div>
-                                </div>
-                                <a class="btn btn-dark" href="./project/quiz-game/index.htm" target="_blank">
-                                    <i class="far fa-file"></i> Landing Page</a>
-                                <!-- Portfolio Modal - Text-->
-                                <p class="mb-1">A quiz game about javascript in javascript.</p>
-                                <!-- Portfolio Modal - Image-->
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Project9.PNG" alt="" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Portfolio Modal 6-->
-    <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog"
-        aria-labelledby="portfolioModal10Label" aria-hidden="true">
-        <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                </button>
-                <div class="modal-body text-center">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Covid-19 Dashboard</h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-icon">
-                                        <span class="iconify" data-icon="logos:javascript" data-inline="false"></span> 
-                                        | <span class="iconify" data-icon="vscode-icons:file-type-reactts" data-inline="false"></span>
-                                    </div>
-                                </div>
-                                <div class="btn btn-dark">
-                                    <i class="fas fa-laptop"></i> <span class="iconify" data-icon="emojione-monotone:construction-worker" data-inline="false"></span> W.I.P</div>
-                                <!-- Portfolio Modal - Text-->
-                                <p class="mb-1">A dynamic dashboard to track the coronavirus outbreak.
-                                The report is constantly updated from data taken in JSON by API request.</p>
-                                <p class="mb-1">The dashboard takes full use of the advadages of react to build dynamic components based on user request
-                                (the dashboard is in hebrew)</p>
-                                <!-- Portfolio Modal - Image-->
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Project10.PNG" alt="" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="js/loading.js"></script> {% endcomment %}
     <!-- Font Awesome & iconify icons-->
     <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
     <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
@@ -808,12 +972,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <!-- Third party plugin JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <!-- Contact form JS-->
-    <script src="assets/mail/jqBootstrapValidation.js"></script>
-    <script src="assets/mail/contact_me.js"></script>
-    <!-- Core theme JS-->
-    <!--ENDDDDDDDD-->
-    <script src="js/scripts.js"></script>
 </body>
 
 </html>

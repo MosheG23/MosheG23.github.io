@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fullpage.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Rock.Scissors.Paper</title>
+</head>
+<body>
+    <div id="fullpage">
+        <div class="section landing">
+            <span class="title">Rock.Scissors.Paper</span><br />
+            <h1>✊🏽 . ✌🏻 . ✋🏾</h1>
+            <h5>Made by Moshe Gotam</h5>
+            <p>The Game Written in ReactJS</p>
+            <a href="https://desolate-badlands-33075.herokuapp.com/" target="_blank">
+                <button class="btn btn-outline-light">Game Link</button></a>
+        </div>
+        <div class="section rules">
+            <div class="rules__content">
+                <div class="rules__desc">
+                <h1>Rules</h1>
+                <p>Although the game has a lot of complexity to it, the rules to play it are pretty simple.
+                    The game is played where players deliver hand signals that will represent the elements of the game;
+                    rock, paper and scissors. The outcome of the game is determined by 3 simple rules:
+
+                    Rock wins against scissors.
+                    Scissors win against paper.
+                    Paper wins against rock.</p>
+                </div>
+                <div class="hands">
+                    <div class="hands__type"><img src="img/rock.png" alt="">
+                        <span class="hands__text">Rock</span></div>
+                    <div class="hands__type"><img src="img/scissors.png" alt="">
+                        <span class="hands__text">Scissors</span></div>
+                    <div class="hands__type"><img src="img/paper.png" alt="">
+                        <span class="hands__text">Paper</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="section modes rock">
+            <h1>Game Modes</h1>
+            <p>Choose your starting point!</p>
+            <div class="modes__type">
+                <div class="modes__arcade">
+                    <h4>Arcade</h4>
+                    <li>
+                        Best of 5 - winner gets to 3 first
+                    </li>
+                    <li>
+                        Both players start with 0
+                    </li>
+                </div>
+                <div class="modes__custom">
+                    <h4>Custom</h4>
+                    <li>
+                        You choose the number of rounds!
+                    </li>
+                    <li>
+                        You can select the score for each player!
+                    </li>
+                </div>
+            </div>
+        </div>
+        <div class="section features">
+            <h1>App Map</h1>
+            <p>Choose your starting point!</p>
+        </div>
+    </div>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src="fullpage.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
