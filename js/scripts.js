@@ -12,7 +12,7 @@
     
     var loc = window.location.pathname;
     var dir = loc.substring(0, loc.lastIndexOf("/"));
-    var dir = dir.substring(dir.lastIndexOf("/") + 1);
+    dir = dir.substring(dir.lastIndexOf("/") + 1);
     
     var cssPath = 'css/';
     if (dir != 'mosheg23.github.io'){
